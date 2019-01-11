@@ -1,7 +1,9 @@
+/*Global values*/
 body {
     overflow-x: hidden;
     background-color: #fff;
     font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
 }
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
@@ -10,15 +12,89 @@ a:link, a:visited, a:hover, a:active {
 p {
     font-size: 16px;
 }
+/*Header tags*/
 nav {
-    padding-top: 15px;
+    background-color: #D3D3D3;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 nav ul {
-    text-align: center;
     text-decoration: none;
     list-style: none;
+    font-size: 1.25em;
+    margin: 0;
+    padding: 0;
 }
 nav ul li {
     display: inline;
-    padding: 0.5em;
+    padding: 0 1em;
+    font-weight: bold;
+}
+@media screen and (max-width: 908px) {
+    nav ul li {
+        font-size: 0.9em;
+    }
+}
+@media screen and (max-width: 835px) {
+    nav ul li {
+        font-size: 0.8em;
+    }
+    nav img {
+        height: 140px;
+    }
+}
+@media screen and (max-width: 767px) {
+    nav ul li {
+        font-size: 0.8em;
+    }
+    nav img {
+        height: 120px;
+    }
+}
+@media screen and (max-width: 735px) {
+    nav ul li {
+        font-size: 0.75em;
+    }
+    nav img {
+        height: 120px;
+    }
+}
+/*Li itens disappear WIP*/
+@media screen and (max-width: 415px) {
+    nav {
+        height: 50px;
+    }
+    nav ul li p{
+        display: none;
+    }
+    nav img {
+        height: 120px;
+    }
+}
+/*Main content tags*/
+.banner {
+    /*This is just temporary, for display purposes*/
+    height: 800px;
+}
+/*Footer tags*/
+footer {
+    background-color: #303092;
+    height: 300px; /*adjust this*/
+    color: #fff;
+}
+footer nav {
+    background-color: inherit;
+    padding-top: 3em;
+    align-items: unset;
+    max-height: 2em;
+}
+footer nav ul {
+    font-size: 1.25em;
+}
+address {
+    padding: 1em;
+    text-align: center;
+    font-weight: 300;
 }

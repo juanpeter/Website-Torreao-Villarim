@@ -1,7 +1,22 @@
-            <footer>
-                <p>Some footer text</p>
-            </footer>
-        </div>
+            </main>
+        </div><!--End of container-fluid!-->
+        <footer>
+            <nav>
+                <ul>
+                    <!--Links não funcionam-->
+                    <a href="index/institucional.php"><li>Institucional</li></a>
+                    <a href="#"><li>Empreendimentos</li></a>
+                    <a href="login.php"><li>Login Cliente</li></a>
+                    <a href="#"><li>Login Corretor</li></a>
+                </ul>
+            </nav>
+            <br>
+            <address>
+                <p>Av Amazonas, 290
+                    Joao Pessoa - PB
+                    58030-140</p>
+            </address>
+        </footer>
     <!--Bootstrap Js CDN-->
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

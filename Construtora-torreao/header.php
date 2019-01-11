@@ -6,7 +6,7 @@
         <title>Construtora Torreão Villarim</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Google Fonts CDN-->
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
     <!--Normalize.css-->
         <link href="normalize.css">
     <!--Bootstrap CSS CDN-->
@@ -19,13 +19,14 @@
         <?php wp_head();?>
     </head>
     <body>
+        <nav>
+            <ul>
+                <!--Links não funcionam-->
+                <a href="index/institucional.php"><li>Institucional</li></a>
+                <a href="#"><li>Empreendimentos</li></a>
+                <img src="<?php echo get_template_directory_uri().'/images/logoTipo.png'; ?>" />
+                <a href="login.php"><li>Login Cliente</li></a>
+                <a href="#"><li>Login Corretor</li></a>
+            </ul>
+        </nav>
         <div class="container-fluid">
-            <nav>
-                <ul>
-                    <!--Links não funcionam-->
-                    <a href="index/institucional.php"><li>Institucional</li></a>
-                    <a href="#"><li>Empreendimentos</li></a>
-                    <a href="login.php"><li>Login Cliente</li></a>
-                    <a href="#"><li>Login Corretor</li></a>
-                </ul>
-            </nav>
