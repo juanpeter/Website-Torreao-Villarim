@@ -36,4 +36,4 @@ Classe média (**B**) e média-baixa (**C**);
 
 ##Sistema de login para Corretores##
 - Consultar preços de imóveis;
-- Informações #próprias para o corretor#;
+- Informações _próprias para o corretor_;
