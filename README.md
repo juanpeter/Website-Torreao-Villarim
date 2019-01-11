@@ -1,6 +1,37 @@
 # Website-Torreao-Villarim
 Website for the Torreão Villarim construction company
 
+# Website-Torreao-Villarim
+Website for the Torreão Villarim construction company
+
+## Briefing
+
+### Company Name
+Torreão Villarim Real State;
+
+### Mission
+*TBD*;
+
+### Vision
+*TBD*;
+
+### History
+- Worked for the **local government**, now branching into **low class real state**;
+- 5 low store buildings, **all located in the Bessa region** (middle class neighbour);
+- Newest building is the *Novo Porto Pinheiro*;
+- **Has been on the market for about 25 years**
+
+### Main competitors / Good inspiration
+- [Equilíbrio Construtora](https://construtoraequilibrio.com.br/);
+- [EBS engenharia](http://ebsengenharia.com.br/);
+- [Sheerin Feizi group](http://sfeizigroup.com/);
+
+*not done translating*
+======
+
+# Website-Torreao-Villarim
+Website para a construtora Torreão Villarim
+
 #Briefing#
 
 ##Nome da Empresa##
