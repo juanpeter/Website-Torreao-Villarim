@@ -14,7 +14,25 @@
             <address>
                 <p>Av Amazonas, 290
                     Joao Pessoa - PB
-                    58030-140</p>
+                    58030-140
+                </p>
+                <div class="social-links">
+                    <a href="#" target="_blank">
+                        <div class='circle'>
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank">
+                        <div class='circle'>
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                    </a>
+                    <a href="#" target="_blank">
+                        <div class='circle'>
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </a>
+                </div>
             </address>
         </footer>
     <!--Bootstrap Js CDN-->

@@ -1,4 +1,10 @@
 /*Global values*/
+
+/*
+    Cores da marca: 
+    Roxo: #8781bd
+    Azul: #303092
+*/
 body {
     overflow-x: hidden;
     background-color: #fff;
@@ -22,6 +28,11 @@ nav {
     justify-content: center;
     align-items: center;
 }
+header nav {
+    position: fixed;
+    height: 15vh;
+    width: 100%;
+}
 nav ul {
     text-decoration: none;
     list-style: none;
@@ -32,7 +43,12 @@ nav ul {
 nav ul li {
     display: inline;
     padding: 0 1em;
-    font-weight: bold;
+}
+nav img {
+    height: 15vh;
+}
+li.mobile-view {
+    display: none;
 }
 @media screen and (max-width: 908px) {
     nav ul li {
@@ -43,52 +59,75 @@ nav ul li {
     nav ul li {
         font-size: 0.8em;
     }
-    nav img {
-        height: 140px;
-    }
-}
-@media screen and (max-width: 767px) {
-    nav ul li {
-        font-size: 0.8em;
-    }
-    nav img {
-        height: 120px;
-    }
 }
 @media screen and (max-width: 735px) {
     nav ul li {
         font-size: 0.75em;
     }
-    nav img {
-        height: 120px;
-    }
 }
 /*Li itens disappear WIP*/
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 767px) {
     nav {
-        height: 50px;
+        /*doesnt work*/
+        justify-content: space-around;
     }
-    nav ul li p{
+    nav ul li{
         display: none;
     }
-    nav img {
-        height: 120px;
+    li.mobile-view {
+        display: initial;
+    }
+    li.mobile-view i {
+        font-size: 3em;
+        padding: 0.1em;
     }
 }
 /*Main content tags*/
 .banner {
-    /*This is just temporary, for display purposes*/
-    height: 800px;
+    height: 120vh;
+    background-image: url('../images/p.pinheiro.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.banner img {
+    max-height: 100%;
+}
+.blog-post {
+    background-color: #fff;
+    margin: 0 5em -1em 5em;
+    padding: 18vh 2em 2em 2em;
+}
+@media screen and (max-width: 902px) {
+    .blog-post {
+        margin: 0 2em -1em 2em;
+    }
+}
+@media screen and (max-width: 504px) {
+    .blog-post {
+        margin: 0 1em -1em 1em;
+    }
+}
+@media screen and (max-width: 412px) {
+    .blog-post {
+        margin: 0 0.1em -1em 0.1em;
+    }
+}
+.option {
+    background-color: #D3D3D3;
+    margin: 1em 0;
+    padding: 20px;
 }
 /*Footer tags*/
 footer {
     background-color: #303092;
-    height: 300px; /*adjust this*/
+    height: 100%;
     color: #fff;
 }
 footer nav {
     background-color: inherit;
     padding-top: 3em;
+    display:flex;
     align-items: unset;
     max-height: 2em;
 }
@@ -99,4 +138,21 @@ address {
     padding: 1em;
     text-align: center;
     font-weight: 300;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle {
+    background-color: #fff;
+    border-radius: 100%;
+    height: 3em;
+    width: 3em;
+    margin: 0 1em;
+}
+.circle i {
+    color: #303092;
+    font-size: 2em;
+    padding: 0.2em 0;
 }

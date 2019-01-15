@@ -22,13 +22,16 @@
         <header>
             <nav>
                 <ul>
-                    <!--Links não funcionam-->
-                    <a href="index/institucional.php"><li>Institucional</li></a>
+                    <li class="mobile-view"><i class="fas fa-bars"></i></li>
+                    <li class="mobile-view"><i class="fas fa-phone fa-rotate-90"></i></li>
+                    <li class="mobile-view"><i class="fas fa-envelope"></i></li>
+                    <a href="index.php?page_id=30"><li>Institucional</li></a>
                     <a href="#"><li>Empreendimentos</li></a>
-                    <img src="<?php echo get_template_directory_uri().'/images/logoTipo.png'; ?>" />
+                    <a href="index.php?page_id=40">
+                        <li><img src="<?php echo get_template_directory_uri().'/images/logoTipo.png'; ?>" /></li>
+                    </a>
                     <a href="login.php"><li>Login Cliente</li></a>
                     <a href="#"><li>Login Corretor</li></a>
                 </ul>
             </nav>
-        <header>
-        <div class="container-fluid">
+        </header>
