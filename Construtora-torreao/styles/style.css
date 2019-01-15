@@ -4,6 +4,7 @@ body {
     background-color: #fff;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
+    background-image: url('../images/bg-white.png') ;
 }
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
@@ -14,7 +15,8 @@ p {
 }
 /*Header tags*/
 nav {
-    background-color: #D3D3D3;
+    background-color: hsla(360, 100%,100%, 0.75);
+    border-bottom: #303092 2px solid;
     height: 100%;
     display: flex;
     justify-content: center;

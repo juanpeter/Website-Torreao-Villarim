@@ -1,5 +1,6 @@
 		<main>
 		<div class="banner">
+
 			<?php //echo <img src='/php_test/image_archive/" . $last_file[0] . "' alt='error'> ?>
 		</div>
 

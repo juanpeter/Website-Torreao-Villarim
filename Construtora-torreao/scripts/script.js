@@ -1,1 +1,3 @@
-$(document.body).css('background-color','red')
+$(document).ready(function() {
+    console.log('works!')
+});

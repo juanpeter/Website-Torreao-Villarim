@@ -19,14 +19,16 @@
         <?php wp_head();?>
     </head>
     <body>
-        <nav>
-            <ul>
-                <!--Links não funcionam-->
-                <a href="index/institucional.php"><li>Institucional</li></a>
-                <a href="#"><li>Empreendimentos</li></a>
-                <img src="<?php echo get_template_directory_uri().'/images/logoTipo.png'; ?>" />
-                <a href="login.php"><li>Login Cliente</li></a>
-                <a href="#"><li>Login Corretor</li></a>
-            </ul>
-        </nav>
+        <header>
+            <nav>
+                <ul>
+                    <!--Links não funcionam-->
+                    <a href="index/institucional.php"><li>Institucional</li></a>
+                    <a href="#"><li>Empreendimentos</li></a>
+                    <img src="<?php echo get_template_directory_uri().'/images/logoTipo.png'; ?>" />
+                    <a href="login.php"><li>Login Cliente</li></a>
+                    <a href="#"><li>Login Corretor</li></a>
+                </ul>
+            </nav>
+        <header>
         <div class="container-fluid">
