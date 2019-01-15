@@ -38,8 +38,6 @@ Classe média (**B**) e média-baixa (**C**);
 
 *Não possuem nenhum rastro digital*
 
-=====
-
 # Website-Torreao-Villarim
 Website for the Torreão Villarim construction company
 
