@@ -20,11 +20,12 @@
     </head>
     <body>
         <header>
-            <nav>
+            <nav id="dropNav">
+                    <a href="index.php?page_id=40">
+                        <img class="mobile-view" src="<?php echo get_template_directory_uri().'/images/logoTipo.png'; ?>" />
+                    </a>
+                        <i class="fas fa-bars mobile-view" id="toggleNav"></i>
                 <ul>
-                    <li class="mobile-view"><i class="fas fa-bars"></i></li>
-                    <li class="mobile-view"><i class="fas fa-phone fa-rotate-90"></i></li>
-                    <li class="mobile-view"><i class="fas fa-envelope"></i></li>
                     <a href="index.php?page_id=30"><li>Institucional</li></a>
                     <a href="#"><li>Empreendimentos</li></a>
                     <a href="index.php?page_id=40">
@@ -33,5 +34,15 @@
                     <a href="login.php"><li>Login Cliente</li></a>
                     <a href="#"><li>Login Corretor</li></a>
                 </ul>
+                <div class="dropNav-items">
+                    <br>
+                    <a href="index.php?page_id=30">Institucional</a>
+                    <br>
+                    <a href="#">Empreendimentos</a>
+                    <br>
+                    <a href="mailto:construtora@torreaovillarim.com.br" alt="link para mensagem por Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
             </nav>
         </header>

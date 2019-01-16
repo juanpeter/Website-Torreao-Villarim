@@ -4,7 +4,7 @@
             <nav>
                 <ul>
                     <!--Links não funcionam-->
-                    <a href="index/institucional.php"><li>Institucional</li></a>
+                    <a href="index.php?page_id=30"><li>Institucional</li></a>
                     <a href="#"><li>Empreendimentos</li></a>
                     <a href="login.php"><li>Login Cliente</li></a>
                     <a href="#"><li>Login Corretor</li></a>
@@ -31,6 +31,9 @@
                         <div class='circle'>
                             <i class="fab fa-instagram"></i>
                         </div>
+                    </a>
+                    <a href="tel:#">
+                        <li class="mobile-view"><i class="fas fa-phone fa-rotate-90"></i></li>
                     </a>
                 </div>
             </address>

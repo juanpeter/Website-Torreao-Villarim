@@ -30,57 +30,64 @@ nav {
 }
 header nav {
     position: fixed;
-    height: 15vh;
+    height: 5em;
     width: 100%;
+    z-index: 1;
 }
 nav ul {
     text-decoration: none;
     list-style: none;
-    font-size: 1.25em;
+    font-size: 1em;
     margin: 0;
     padding: 0;
 }
 nav ul li {
     display: inline;
     padding: 0 1em;
+    color: #8781bd;
+}
+nav ul li:hover {
+    color: #303092;
+    transition: color 1s;
 }
 nav img {
-    height: 15vh;
+    height: 80px;
 }
-li.mobile-view {
+.mobile-view {
     display: none;
 }
-@media screen and (max-width: 908px) {
-    nav ul li {
-        font-size: 0.9em;
-    }
-}
-@media screen and (max-width: 835px) {
-    nav ul li {
-        font-size: 0.8em;
-    }
-}
-@media screen and (max-width: 735px) {
-    nav ul li {
-        font-size: 0.75em;
-    }
-}
-/*Li itens disappear WIP*/
-@media screen and (max-width: 767px) {
-    nav {
-        /*doesnt work*/
-        justify-content: space-around;
-    }
+@media screen and (max-width: 700px) {
     nav ul li{
         display: none;
     }
-    li.mobile-view {
+    nav {
+        display: inline-block;
+        padding: 0 0.5em;
+    }
+    nav img {
+        float: left;
+    }
+    #toggleNav {
+        float: right;
+        padding: 0.25em;
+        color: #8781bd;
+    }
+    .mobile-view {
         display: initial;
-    }
-    li.mobile-view i {
         font-size: 3em;
-        padding: 0.1em;
+        padding: 0;
     }
+    .mobile-view:hover {
+        color: #303092;
+        transition: color 1s;
+    }
+}
+/*dropNav*/
+.dropNav-items {
+    padding: 3em 0;
+    display: none;
+    text-align: center;
+    font-size: 2em;
 }
 /*Main content tags*/
 .banner {
@@ -115,8 +122,8 @@ li.mobile-view {
 }
 .option {
     background-color: #D3D3D3;
-    margin: 1em 0;
-    padding: 20px;
+    margin: 0.125em 0;
+    padding: 5em;
 }
 /*Footer tags*/
 footer {
@@ -130,6 +137,14 @@ footer nav {
     display:flex;
     align-items: unset;
     max-height: 2em;
+}
+footer nav ul li {
+    color: #fff;
+}
+footer nav ul li:hover {
+    /*Change(?) this*/
+    color: yellow;
+    transition: color 1s;
 }
 footer nav ul {
     font-size: 1.25em;
