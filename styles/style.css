@@ -1,0 +1,178 @@
+/*Global values*/
+
+/*
+    Cores da marca: 
+    Roxo: #8781bd
+    Azul: #303092
+*/
+body {
+    overflow-x: hidden;
+    background-color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    background-image: url('../images/bg-white.png') ;
+}
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+p {
+    font-size: 16px;
+}
+/*Header tags*/
+nav {
+    background-color: hsla(360, 100%,100%, 0.75);
+    border-bottom: #303092 2px solid;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav {
+    position: fixed;
+    height: 5em;
+    width: 100%;
+    z-index: 1;
+}
+nav ul {
+    text-decoration: none;
+    list-style: none;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    padding: 0 1em;
+    color: #8781bd;
+}
+nav ul li:hover {
+    color: #303092;
+    transition: color 1s;
+}
+nav img {
+    height: 80px;
+}
+.mobile-view {
+    display: none;
+}
+@media screen and (max-width: 720px) {
+    nav ul li{
+        display: none;
+    }
+    nav {
+        display: inline-block;
+        padding: 0 0.5em;
+    }
+    nav img {
+        float: left;
+    }
+    #toggleNav {
+        float: right;
+        padding: 0.25em;
+        color: #8781bd;
+    }
+    .mobile-view {
+        display: initial;
+        font-size: 3em;
+        padding: 0;
+    }
+    .mobile-view:hover {
+        color: #303092;
+        transition: color 1s;
+    }
+}
+/*dropNav*/
+.dropNav-items {
+    padding: 3em 0;
+    display: none;
+    text-align: center;
+    font-size: 2em;
+}
+@media screen and (max-width:700px) {
+    .dropNav-items {
+        display: none;
+    }
+}
+/*Main content tags*/
+.banner {
+    height: 120vh;
+    background-image: url('../images/p.pinheiro.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.banner img {
+    max-height: 100%;
+}
+.blog-post {
+    background-color: #fff;
+    margin: 0 5em -1em 5em;
+    padding: 18vh 2em 2em 2em;
+}
+@media screen and (max-width: 902px) {
+    .blog-post {
+        margin: 0 2em -1em 2em;
+    }
+}
+@media screen and (max-width: 504px) {
+    .blog-post {
+        margin: 0 1em -1em 1em;
+    }
+}
+@media screen and (max-width: 412px) {
+    .blog-post {
+        margin: 0 0.1em -1em 0.1em;
+    }
+}
+.option {
+    background-color: #D3D3D3;
+    margin: 0.125em 0;
+    padding: 5em;
+}
+/*Footer tags*/
+footer {
+    background-color: #303092;
+    height: 100%;
+    color: #fff;
+}
+footer nav {
+    background-color: inherit;
+    padding-top: 3em;
+    display:flex;
+    align-items: unset;
+    max-height: 2em;
+}
+footer nav ul li {
+    color: #fff;
+}
+footer nav ul li:hover {
+    /*Change(?) this*/
+    color: yellow;
+    transition: color 1s;
+}
+footer nav ul {
+    font-size: 1.25em;
+}
+address {
+    padding: 1em;
+    text-align: center;
+    font-weight: 300;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle {
+    background-color: #fff;
+    border-radius: 100%;
+    height: 3em;
+    width: 3em;
+    margin: 0 1em;
+}
+.circle i {
+    color: #303092;
+    font-size: 2em;
+    padding: 0.2em 0;
+}
