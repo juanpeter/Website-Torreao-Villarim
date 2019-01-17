@@ -56,7 +56,7 @@ nav img {
 .mobile-view {
     display: none;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 720px) {
     nav ul li{
         display: none;
     }
@@ -89,13 +89,18 @@ nav img {
     text-align: center;
     font-size: 2em;
 }
+@media screen and (max-width:700px) {
+    .dropNav-items {
+        display: none;
+    }
+}
 /*Main content tags*/
 .banner {
-    height: 120vh;
+    height: 800px;
     background-image: url('../images/p.pinheiro.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-size: cover;
 }
 .banner img {
     max-height: 100%;

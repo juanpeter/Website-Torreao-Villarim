@@ -24,15 +24,17 @@ $('#toggleNav').click(function(){
         return;
     }
 })
-//if the window is widder than 700px, close the nav
-$(document.body).onresize(function(){
-    //shrinks dropnav to its original size
-    $('#dropNav').css('height','5em');
-    //Change class to fa-bars, while removing fa-times
-    $('#toggleNav').addClass('fa-bars');
-    $('#toggleNav').removeClass('fa-times');
-    //Show hidden elements
-    $('.dropNav-items').css('display','none');
-    //prob unnecessary, but don't wanna be surprised later
-    return;
+//if the window is widder than 720px, close the nav
+$(window).resize(function(){
+    if ($(window).width() >= 720) {
+        //shrinks dropnav to its original size
+        $('#dropNav').css('height','5em');
+        //Change class to fa-bars, while removing fa-times
+        $('#toggleNav').addClass('fa-bars');
+        $('#toggleNav').removeClass('fa-times');
+        //Show hidden elements
+        $('.dropNav-items').css('display','none');
+        //prob unnecessary, but don't wanna be surprised later
+        return;
+    }
 })
