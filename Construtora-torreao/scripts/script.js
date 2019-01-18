@@ -18,7 +18,7 @@ $('#toggleNav').click(function(){
         //Change class to fa-bars, while removing fa-times
         $('#toggleNav').addClass('fa-bars');
         $('#toggleNav').removeClass('fa-times');
-        //Show hidden elements
+        //Hides hidden elements
         $('.dropNav-items').css('display','none')
         //prob unnecessary, but don't wanna be surprised later
         return;
@@ -32,7 +32,7 @@ $(window).resize(function(){
         //Change class to fa-bars, while removing fa-times
         $('#toggleNav').addClass('fa-bars');
         $('#toggleNav').removeClass('fa-times');
-        //Show hidden elements
+        //Hides elements
         $('.dropNav-items').css('display','none');
         //prob unnecessary, but don't wanna be surprised later
         return;

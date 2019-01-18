@@ -7,7 +7,6 @@
 */
 body {
     overflow-x: hidden;
-    background-color: #fff;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     background-image: url('../images/bg-white.png') ;
@@ -18,6 +17,11 @@ a:link, a:visited, a:hover, a:active {
 }
 p {
     font-size: 16px;
+}
+.container-fluid {
+    -webkit-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
 }
 /*Header tags*/
 nav {
@@ -96,39 +100,39 @@ nav img {
 }
 /*Main content tags*/
 .banner {
-    height: 800px;
-    background-image: url('../images/p.pinheiro.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    -webkit-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
 }
-.banner img {
-    max-height: 100%;
-}
+
 .blog-post {
-    background-color: #fff;
-    margin: 0 5em -1em 5em;
-    padding: 18vh 2em 2em 2em;
+    background-color: hsla(100, 100%, 100%, 1);
+    margin-bottom: -1em;
+    padding: 1em 2em 2em 2em;
+    -webkit-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
 }
-@media screen and (max-width: 902px) {
-    .blog-post {
-        margin: 0 2em -1em 2em;
-    }
+
+.blog-post i {
+    padding: 16px;
+    font-size: 2em;
+    color: #303092;
 }
-@media screen and (max-width: 504px) {
-    .blog-post {
-        margin: 0 1em -1em 1em;
-    }
+
+.blog-post a {
+    color: #303092;
 }
-@media screen and (max-width: 412px) {
-    .blog-post {
-        margin: 0 0.1em -1em 0.1em;
-    }
+
+.blog-post a:hover {
+    color: #8781bd;
+    transition: color 1s;
 }
+
 .option {
     background-color: #D3D3D3;
-    margin: 0.125em 0;
-    padding: 5em;
+    padding: 5em 0;
+    border: 5px solid #fff;
 }
 /*Footer tags*/
 footer {
@@ -138,7 +142,6 @@ footer {
 }
 footer nav {
     background-color: inherit;
-    padding-top: 3em;
     display:flex;
     align-items: unset;
     max-height: 2em;

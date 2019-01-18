@@ -8,7 +8,7 @@
     <!--Google Fonts CDN-->
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
     <!--Normalize.css-->
-        <link href="normalize.css">
+        <link  href="<?php echo get_bloginfo('template_directory'); ?>/styles/normalize.css" rel="stylesheet">
     <!--Bootstrap CSS CDN-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">    
     <!--Fontawesome CSS CDN-->
@@ -21,24 +21,24 @@
     <body>
         <header>
             <nav id="dropNav">
-                    <a href="index.php?page_id=40">
+                    <a href="index.php?page_id=129">
                         <img class="mobile-view" src="<?php echo get_template_directory_uri().'/images/logoTipo.png'; ?>" />
                     </a>
                         <i class="fas fa-bars mobile-view" id="toggleNav"></i>
                 <ul>
                     <a href="index.php?page_id=30"><li>Institucional</li></a>
-                    <a href="#"><li>Empreendimentos</li></a>
-                    <a href="index.php?page_id=40">
+                    <a href="index.php?page_id=66"><li>Empreendimentos</li></a>
+                    <a href="index.php?page_id=129">
                         <li><img src="<?php echo get_template_directory_uri().'/images/logoTipo.png'; ?>" /></li>
                     </a>
                     <a href="login.php"><li>Login Cliente</li></a>
-                    <a href="#"><li>Login Corretor</li></a>
+                    <a href="#"><li>Contato</li></a>
                 </ul>
                 <div class="dropNav-items">
                     <br>
                     <a href="index.php?page_id=30">Institucional</a>
                     <br>
-                    <a href="#">Empreendimentos</a>
+                    <a href="index.php?page_id=66">Empreendimentos</a>
                     <br>
                     <a href="mailto:construtora@torreaovillarim.com.br" alt="link para mensagem por Email">
                         <i class="fas fa-envelope"></i>
