@@ -32,9 +32,6 @@ Classe média (**B**) e média-baixa (**C**);
 - Expor fotos das obras;
 - Formação / história da construtora;
 - Desenvolver Missão e Visão;
-- **Sistema de login para Corretores
-  - Consultar preços de imóveis;
-  - Informações _próprias para o corretor_;
 
 *Não possuem nenhum rastro digital*
 
@@ -71,8 +68,5 @@ Middle (**B**) & middle-low (**C**) classes;
 - Show construction pictures;
 - Document the company's origins / creation;
 - Develop company's mission and vision;
-- **Login system for agents
-  - Access to property prices;
-  - Provide futher information _exclusive to the agents_;
 
 *The company doesn't possess any previous digital footprint*
