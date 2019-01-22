@@ -23,6 +23,7 @@ Torreão Villarim;
 - [Equilíbrio Construtora](https://construtoraequilibrio.com.br/);
 - [EBS engenharia](http://ebsengenharia.com.br/);
 - [Sheerin Feizi group](http://sfeizigroup.com/);
+- [Construtora Comtermica](https://comtermica.com.br/);
 
 ### Público alvo
 Classe média (**B**) e média-baixa (**C**);
@@ -59,6 +60,7 @@ Torreão Villarim Real State;
 - [Equilíbrio Construtora](https://construtoraequilibrio.com.br/);
 - [EBS engenharia](http://ebsengenharia.com.br/);
 - [Sheerin Feizi group](http://sfeizigroup.com/);
+ [Construtora Comtermica](https://comtermica.com.br/);
 
 ### Target demographic
 Middle (**B**) & middle-low (**C**) classes;
