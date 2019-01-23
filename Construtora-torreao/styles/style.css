@@ -3,13 +3,15 @@
 /*
     Cores da marca: 
     Roxo: #8781bd
-    Azul: #303092
+    Azul: #2e3192
 */
 body {
     overflow-x: hidden;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    background-image: url('../images/bg-white.png') ;
+    background-image:
+    linear-gradient(rgba(135,129,189,0.5),rgba(91,83,158,0.8)),
+    url('../images/bg-white.png');
 }
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
@@ -26,13 +28,14 @@ p {
 /*Header tags*/
 nav {
     background-color: hsla(360, 100%,100%, 0.75);
-    border-bottom: #303092 2px solid;
+    border-bottom: #2e3192 2px solid;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 header nav {
+    font-size: 1.125em;
     position: fixed;
     height: 5em;
     width: 100%;
@@ -51,11 +54,13 @@ nav ul li {
     color: #8781bd;
 }
 nav ul li:hover {
-    color: #303092;
+    cursor: pointer;
+    color: #2e3192;
     transition: color 1s;
 }
 nav img {
     height: 80px;
+    float: left;
 }
 .mobile-view {
     display: none;
@@ -82,7 +87,7 @@ nav img {
         padding: 0;
     }
     .mobile-view:hover {
-        color: #303092;
+        color: #2e3192;
         transition: color 1s;
     }
 }
@@ -104,7 +109,58 @@ nav img {
     -moz-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
     box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
 }
-
+@media screen and (max-width:720px) {
+    .banner {
+        padding-top: 78px;
+    }
+}
+.banner-text {
+    position: absolute;
+    left: 0;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    animation-name: top-down;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+/*gotta add some media queries*/
+@keyframes top-down {
+    0% {
+        top: -800px;
+    }
+    100% {
+        top: 80%;
+    }
+}
+@media screen and (max-width:361px) {
+    @keyframes top-down {
+        0% {
+            top: -800px;
+        }
+        100% {
+            top: 30%;
+        }
+    }
+}
+.banner-text h2 {
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+    border: solid #fff 2px;
+    padding: 0.5em;
+}
+.banner-text h2:hover {
+    background-color: rgba(0,0,0,0.5);
+    border: solid #2e3192 2px;
+    transition: 1s;
+}
+@media screen and (max-width: 360px) {
+    .banner-text h2 {
+        font-size: 1.25em;
+        width: 250px;
+    }
+}
 .blog-post {
     background-color: hsla(100, 100%, 100%, 1);
     margin-bottom: -1em;
@@ -113,34 +169,54 @@ nav img {
     -moz-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
     box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
 }
-
 .blog-post i {
     padding: 16px;
     font-size: 2em;
-    color: #303092;
+    color: #2e3192;
 }
-
 .blog-post a {
-    color: #303092;
+    color: #2e3192;
 }
-
 .blog-post a:hover {
     color: #8781bd;
     transition: color 1s;
 }
-
 .option {
-    background-color: #D3D3D3;
-    padding: 5em 0;
     border: 5px solid #fff;
+    padding: 0;
+}
+.option img {
+    position: relative;
+    z-index: 0;
+}
+.option p{
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+    text-align: center;
+    color: #fff;
+    z-index: 3;
+    font-size: 1.5em;
+}
+.option:hover p {
+    font-size: 1.75em;
+    transition: 1s;
+}
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5));
 }
 /*Footer tags*/
 footer {
-    background-color: #303092;
+    background-color: #2e3192;
     height: 100%;
     color: #fff;
 }
 footer nav {
+    padding-top: 1em;
     background-color: inherit;
     display:flex;
     align-items: unset;
@@ -149,7 +225,7 @@ footer nav {
 footer nav ul li {
     color: #fff;
 }
-footer nav ul li:hover {
+footer nav ul li a:hover {
     /*Change(?) this*/
     color: yellow;
     transition: color 1s;
@@ -174,8 +250,12 @@ address {
     width: 3em;
     margin: 0 1em;
 }
+.circle:hover {
+    background-color: yellow;
+    transition: 1s;
+}
 .circle i {
-    color: #303092;
+    color: #2e3192;
     font-size: 2em;
     padding: 0.2em 0;
 }

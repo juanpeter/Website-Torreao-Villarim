@@ -2,10 +2,8 @@
 
 <?php get_header(); ?>
 <div class='container-fluid'>
-	<div class='banner'>
-		<img class="img-fluid" src="<?php echo get_template_directory_uri().'/images/p.pinheiro.jpg'; ?>"/>
-	</div>
 
+<div style='padding-top: 5.5em'></div>
 <?php
 			if ( have_posts() ) : while ( have_posts() ) : the_post();
   	

@@ -3,11 +3,10 @@
         <footer>
             <nav>
                 <ul>
-                    <!--Links não funcionam-->
-                    <a href="index.php?page_id=30"><li>Institucional</li></a>
-                    <a href="index.php?page_id=66"><li>Empreendimentos</li></a>
-                    <a href="login.php"><li>Login Cliente</li></a>
-                    <a href="#"><li>Login Corretor</li></a>
+                <li><a href="index.php?page_id=129">Home</a></li>
+                <li><a href="index.php?page_id=30">Institucional</a></li>
+                <li><a href="index.php?page_id=66">Empreendimentos</a></li>
+                <li><a href="#">Contato</a></li>
                 </ul>
             </nav>
             <address>
@@ -16,7 +15,7 @@
                     58030-140
                 </p>
                 <div class="social-links">
-                    <a href="#" target="_blank">
+                    <a href="https://www.facebook.com/construtoratorreaovillarim/" target="_blank">
                         <div class='circle'>
                             <i class="fab fa-facebook-f"></i>
                         </div>

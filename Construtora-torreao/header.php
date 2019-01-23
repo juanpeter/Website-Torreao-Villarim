@@ -22,19 +22,17 @@
         <header>
             <nav id="dropNav">
                     <a href="index.php?page_id=129">
-                        <img class="mobile-view" src="<?php echo get_template_directory_uri().'/images/logoTipo.png'; ?>" />
+                        <img src="<?php echo get_template_directory_uri().'/images/logoTipo.png'; ?>" />
                     </a>
-                        <i class="fas fa-bars mobile-view" id="toggleNav"></i>
+                    <i class="fas fa-bars mobile-view" id="toggleNav"></i>
                 <ul>
-                    <a href="index.php?page_id=30"><li>Institucional</li></a>
-                    <a href="index.php?page_id=66"><li>Empreendimentos</li></a>
-                    <a href="index.php?page_id=129">
-                        <li><img src="<?php echo get_template_directory_uri().'/images/logoTipo.png'; ?>" /></li>
-                    </a>
-                    <a href="login.php"><li>Login Cliente</li></a>
-                    <a href="#"><li>Contato</li></a>
+                    <li id='top'>Home</li>
+                    <li id='description'>Institucional</li>
+                    <li id='products'>Empreendimentos</li>
+                    <li id='top'>Contato</li>
                 </ul>
                 <div class="dropNav-items">
+                    <a href="index.php?page_id=129">Home</a>
                     <br>
                     <a href="index.php?page_id=30">Institucional</a>
                     <br>
