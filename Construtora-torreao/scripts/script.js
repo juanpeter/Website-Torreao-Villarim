@@ -10,6 +10,20 @@ $(window).resize(function(){
     overlayMobile()
 });
 
+//If window is scrolled, call these functions
+$(window).scroll(function() {
+    //Window current position!
+    var scroll = $(window).scrollTop();
+    //Header position, its always 32 px
+    var os = $('header').offset().top;
+    var ht = $('.blog-post').height();
+    var font = 88;
+    if(scroll > os + ht - font){
+        console.log("essa poar")
+    }
+  
+  });
+
 //scroll to top of website
 $('#top').click(function(){
     $('html,body').animate({
