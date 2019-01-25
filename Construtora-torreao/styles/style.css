@@ -1,10 +1,4 @@
 /*Global values*/
-
-/*
-    Cores da marca: 
-    Roxo: #8781bd
-    Azul: #2e3192
-*/
 body {
     overflow-x: hidden;
     font-family: 'Work Sans', sans-serif;
@@ -16,6 +10,7 @@ body {
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 p {
     font-size: 16px;
@@ -27,8 +22,6 @@ p {
 }
 /*Header tags*/
 nav {
-    background-color: hsla(360, 100%,100%, 0.75);
-    border-bottom: #2e3192 2px solid;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -36,10 +29,12 @@ nav {
 }
 header nav {
     font-size: 1.125em;
+    border-bottom: #2e3192 2px solid;
+    background-color: rgba(255,255,255, 0.75);
     position: fixed;
-    height: 5em;
+    height: 6em;
     width: 100%;
-    z-index: 1;
+    z-index: 100;
 }
 nav ul {
     text-decoration: none;
@@ -65,104 +60,66 @@ nav img {
 .mobile-view {
     display: none;
 }
-@media screen and (max-width: 720px) {
-    nav ul li{
-        display: none;
-    }
-    nav {
-        display: inline-block;
-        padding: 0 0.5em;
-    }
-    nav img {
-        float: left;
-    }
-    #toggleNav {
-        float: right;
-        padding: 0.25em;
-        color: #8781bd;
-    }
-    .mobile-view {
-        display: initial;
-        font-size: 3em;
-        padding: 0;
-    }
-    .mobile-view:hover {
-        color: #2e3192;
-        transition: color 1s;
-    }
-}
-/*dropNav*/
+/*DropNav*/
 .dropNav-items {
     padding: 3em 0;
     display: none;
     text-align: center;
     font-size: 2em;
 }
-@media screen and (max-width:700px) {
-    .dropNav-items {
-        display: none;
-    }
-}
 /*Main content tags*/
 .banner {
+    position: relative;
     -webkit-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
     -moz-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
     box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
 }
-@media screen and (max-width:720px) {
-    .banner {
-        padding-top: 78px;
-    }
-}
 .banner-text {
+    color: #fff;
+    margin: 0 20px;
     position: absolute;
-    left: 0;
-    display: inline-flex;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
+    z-index: 2;
+    justify-content: left;
     animation-name: top-down;
     animation-duration: 2s;
     animation-fill-mode: forwards;
 }
-/*gotta add some media queries*/
 @keyframes top-down {
     0% {
         top: -800px;
     }
     100% {
-        top: 80%;
-    }
-}
-@media screen and (max-width:361px) {
-    @keyframes top-down {
-        0% {
-            top: -800px;
-        }
-        100% {
-            top: 30%;
-        }
+        top: 20%;
     }
 }
 .banner-text h2 {
-    background-color: rgba(0,0,0,0.3);
-    color: #fff;
-    border: solid #fff 2px;
-    padding: 0.5em;
+    font-weight: bold;
+    font-size: 4em;
 }
-.banner-text h2:hover {
-    background-color: rgba(0,0,0,0.5);
-    border: solid #2e3192 2px;
+.banner-text p {
+    font-size: 1.25em;
+}
+.banner-text button {
+    color: #fff;
+    background-color: #2e3192;
+    border: #8781bd 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.banner-text button:hover {
+    background-color: #1e205c;
     transition: 1s;
 }
-@media screen and (max-width: 360px) {
-    .banner-text h2 {
-        font-size: 1.25em;
-        width: 250px;
-    }
+.overlay-main {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-image:
+    linear-gradient(135deg,rgba(46,49,146,0.8), rgba(0,0,0,0));
 }
 .blog-post {
-    background-color: hsla(100, 100%, 100%, 1);
+    background-color: rgba(255,255,255, 1);
     margin-bottom: -1em;
     padding: 1em 2em 2em 2em;
     -webkit-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
@@ -226,7 +183,7 @@ footer nav ul li {
     color: #fff;
 }
 footer nav ul li a:hover {
-    /*Change(?) this*/
+    /*TO DO Change(?) this*/
     color: yellow;
     transition: color 1s;
 }
@@ -258,4 +215,119 @@ address {
     color: #2e3192;
     font-size: 2em;
     padding: 0.2em 0;
+}
+/*How is that thing so big*/
+@media screen and (min-width: 1960px) {
+    .banner-text {
+        font-size: 2.5em;
+        margin: 0 50px;
+    }
+}
+/*For really big screens*/
+@media screen and (max-width: 1960px) {
+    .banner-text {
+        font-size: 2.5em;
+        margin: 0 50px;
+    }
+}
+/*Adapting title*/
+@media screen and (max-width: 1680px) {
+    .banner-text {
+        font-size: 2em;
+    }
+}
+/*Usual desktop screen size*/
+@media screen and (max-width: 1320px) {
+    .banner-text {
+        font-size: 1.5em;
+        margin: 0 20px;
+    }
+}
+/*Smaller screens/ipads*/
+@media screen and (max-width: 960px) {
+    .banner-text {
+        font-size: 1.125em;
+        margin: 0 20px;
+    }
+    @keyframes top-down {
+        0% {
+            top: -800px;
+        }
+        100% {
+            top: 30%;
+        }
+    }
+}
+/*Don´t remember why, might delete later*/
+@media screen and (max-width:700px) {
+    .dropNav-items {
+        display: none;
+    }
+}
+/*For smartphones, a lot of triggers happen @ this threshold*/
+@media screen and (max-width: 720px) {
+    header nav {
+    background-color: rgba(255,255,255,1);
+    }
+    .banner{
+        padding-top: 5em;
+    }
+    .banner-text {
+        font-size: 0.75em;
+    }
+    .overlay-main {
+        height: calc(100% - 5em);
+    }
+    nav ul li{
+        display: none;
+    }
+    nav {
+        display: inline-block;
+        padding: 0 0.5em;
+    }
+    nav img {
+        float: left;
+    }
+    #toggleNav {
+        float: right;
+        padding: 0.25em;
+        color: #8781bd;
+    }
+    .mobile-view {
+        display: initial;
+        font-size: 3em;
+        padding: 0;
+    }
+    .mobile-view:hover {
+        color: #2e3192;
+        transition: color 1s;
+    }
+}
+/*Just adapting the title*/
+@media screen and (max-width: 500px) {
+    .banner-text {
+        font-size: 0.65em;
+    }
+    @keyframes top-down {
+        0% {
+            top: -800px;
+        }
+        100% {
+            top: 35%;
+        }
+    }
+}
+/*Just adapting the title*/
+@media screen and (max-width: 362px) {
+    .banner-text {
+        font-size: 0.5em;
+    }
+    @keyframes top-down {
+        0% {
+            top: -800px;
+        }
+        100% {
+            top: 45%;
+        }
+    }
 }
