@@ -4,14 +4,13 @@
 	<div class='container-fluid'>
 			<div class='banner'>
 				<div class="overlay-main"></div>
-				<img class="img-fluid" src="<?php echo get_template_directory_uri().'/images/p.pinheiro.jpg'; ?>"/>	
-			<div class='banner-text'>
-				<h2>Porto Pinheiro</h2>
-				<p>Conheça seu novo lar no Bessa</p>
-				<a href="index.php?page_id=66">
-					<button>Confira</button>
-				</a>
-			</div>
+				<div class='banner-text'>
+					<h2>Porto Pinheiro</h2>
+					<p>Conheça seu novo lar no Bessa</p>
+					<a href="index.php?page_id=66">
+						<button>Confira</button>
+					</a>
+				</div>
 			</div>
 		<div class="blog-post">
 			<hr>

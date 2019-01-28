@@ -1,10 +1,14 @@
+'use strict'
 //Global values!
 //Window current position!
 let scroll;
 
-//Functions to call at the beginning
+//Functions to call at the beginning//
 //If the document is ready, call these functions
-$(document).ready(function(){
+$(document).ready(function() {
+    // // TO DO: work on this later
+    // //dims opacity of elements onLoad, to be used with scrollFade()
+    // $('.blog-post').children().css({'opacity':'0'});
     navMobile();
     overlayMobile();
 });
@@ -18,6 +22,8 @@ $(window).resize(function(){
 //If window is scrolled, call these functions
 $(window).scroll(function(){
     scrollCheck();
+    //TO DO: work on this later
+    // scrollFade();
 });
 
 //scroll to top of website
@@ -86,23 +92,33 @@ $('#toggleNav').click(function(){
     }
 });
 
+//Functions called onScroll//
+// //TO DO: work on this
+// function scrollFade() {
+//     //Window current position!
+//     let scroll = $(window).scrollTop();
+//     if (scroll >= 200) {
+//         $('.blog-post').children().animate({
+//             opacity:'1',
+//         }, 1000);
+//     }
+// }
 //check scrolling interactions
 function scrollCheck() {
     //Window current position!
     let scroll = $(window).scrollTop();
     //Check if the window width is higher than 720
-    if ($(window).width() > 720){
+    if ($(window).width() > 720) {
         //If scroll is higher than 100px, header becomes smaller and full color
-        if (scroll >= 100) {
+        if (scroll == 100) {
             $('header nav').css({'background-color':'rgba(255,255,255, 1)'});
             $('header nav').animate({
                 height:'5em',
             }, 1000);
         }
         //If scroll is smaller than 100px, header becomes bigger and transparent
-        if (scroll < 100) {
-            $('header nav').css({
-                'background-color':'rgba(255,255,255, 0.75)'});
+        if (scroll == 0) {
+            $('header nav').css({'background-color':'rgba(255,255,255, 0.75)'});
             $('header nav').animate({
                 height:'6em',
             }, 1000);

@@ -15,7 +15,7 @@ a:link, a:visited, a:hover, a:active {
 p {
     font-size: 16px;
 }
-.container-fluid {
+main .container-fluid {
     -webkit-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
     -moz-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
     box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
@@ -73,6 +73,10 @@ nav img {
     -webkit-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
     -moz-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
     box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
+    background-image: url('../images/p.pinheiro.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
 }
 .banner-text {
     color: #fff;
@@ -84,17 +88,22 @@ nav img {
     animation-duration: 2s;
     animation-fill-mode: forwards;
 }
+.banner-text button {
+    width: 128px;
+    height: 48px;
+    font-size: 32px;
+}
 @keyframes top-down {
     0% {
         top: -800px;
     }
     100% {
-        top: 20%;
+        top: 30%;
     }
 }
 .banner-text h2 {
     font-weight: bold;
-    font-size: 4em;
+    font-size: 3em;
 }
 .banner-text p {
     font-size: 1.25em;
@@ -168,59 +177,60 @@ nav img {
 }
 /*Footer tags*/
 footer {
+    padding: 1em 0;
     background-color: #2e3192;
     height: 100%;
     color: #fff;
 }
-footer nav {
-    padding-top: 1em;
-    background-color: inherit;
-    display:flex;
-    align-items: unset;
-    max-height: 2em;
-}
-footer nav ul li {
-    color: #fff;
-}
-footer nav ul li a:hover {
-    /*TO DO Change(?) this*/
-    color: yellow;
-    transition: color 1s;
-}
-footer nav ul {
+footer h2 {
+    font-weight: bold;
     font-size: 1.25em;
 }
-address {
-    padding: 1em;
-    text-align: center;
-    font-weight: 300;
+footer a:hover {
+    color: #fff;
+    transition: 1s;
+}
+address img{
+    height: 150px;
+    width: auto;
+    padding-bottom: 1em;
+}
+address p {
+    font-size: 1em;
+    padding-left: 1em;
+    font-weight: normal;
 }
 .social-links {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 .circle {
-    background-color: #fff;
+    background-color: #8781bd;
     border-radius: 100%;
     height: 3em;
     width: 3em;
-    margin: 0 1em;
+    margin: 1em 1em 0 0;
 }
 .circle:hover {
-    background-color: yellow;
+    background-color: #fff;
     transition: 1s;
 }
 .circle i {
     color: #2e3192;
     font-size: 2em;
-    padding: 0.2em 0;
+    padding: 0.2em 0.3em;
 }
 /*How is that thing so big*/
 @media screen and (min-width: 1960px) {
     .banner-text {
         font-size: 2.5em;
         margin: 0 50px;
+    }
+    .banner-text button {
+        width: 160px;
+        height: 64px;
+        font-size: 40px;
     }
 }
 /*For really big screens*/
@@ -242,6 +252,11 @@ address {
         font-size: 1.5em;
         margin: 0 20px;
     }
+    .banner-text button {
+        width: 128px;
+        height: 48px;
+        font-size: 32px;
+    }
 }
 /*Smaller screens/ipads*/
 @media screen and (max-width: 960px) {
@@ -249,16 +264,8 @@ address {
         font-size: 1.125em;
         margin: 0 20px;
     }
-    @keyframes top-down {
-        0% {
-            top: -800px;
-        }
-        100% {
-            top: 30%;
-        }
-    }
 }
-/*Don´t remember why, might delete later*/
+/*TO DO Don´t remember why, might delete later*/
 @media screen and (max-width:700px) {
     .dropNav-items {
         display: none;
@@ -269,11 +276,8 @@ address {
     header nav {
     background-color: rgba(255,255,255,1);
     }
-    .banner{
+    .banner {
         padding-top: 5em;
-    }
-    .banner-text {
-        font-size: 0.75em;
     }
     .overlay-main {
         height: calc(100% - 5em);
@@ -298,6 +302,7 @@ address {
         font-size: 3em;
         padding: 0;
     }
+    /*TO DO: check if this is necessery at all*/
     .mobile-view:hover {
         color: #2e3192;
         transition: color 1s;
@@ -306,28 +311,17 @@ address {
 /*Just adapting the title*/
 @media screen and (max-width: 500px) {
     .banner-text {
-        font-size: 0.65em;
+        font-size: 0.75em;
+    }
+    .banner {
+        height: 80vh;
     }
     @keyframes top-down {
         0% {
             top: -800px;
         }
         100% {
-            top: 35%;
-        }
-    }
-}
-/*Just adapting the title*/
-@media screen and (max-width: 362px) {
-    .banner-text {
-        font-size: 0.5em;
-    }
-    @keyframes top-down {
-        0% {
-            top: -800px;
-        }
-        100% {
-            top: 45%;
+            top: 40%;
         }
     }
 }

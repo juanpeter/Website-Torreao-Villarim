@@ -29,7 +29,7 @@
                     <li id='top'>Home</li>
                     <li id='description'>Institucional</li>
                     <li id='products'>Empreendimentos</li>
-                    <li id='top'>Contato</li>
+                    <a href="index.php?page_id=220"><li>Contato</li></a>
                 </ul>
                 <div class="dropNav-items">
                     <a href="index.php?page_id=129">Home</a>
