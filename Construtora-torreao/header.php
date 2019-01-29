@@ -21,24 +21,24 @@
     <body>
         <header>
             <nav id="dropNav">
-                    <a href="index.php?page_id=129">
-                        <img src="<?php echo get_template_directory_uri().'/images/logoTipo.png'; ?>" />
-                    </a>
-                    <i class="fas fa-bars mobile-view" id="toggleNav"></i>
+                <a href="index.php?page_id=129">
+                    <img src="<?php echo get_template_directory_uri().'/images/logoTipo.png'; ?>" />
+                </a>
+                <i class="fas fa-bars mobile-view" id="toggleNav"></i>
                 <ul>
-                    <li id='top'>Home</li>
-                    <li id='description'>Institucional</li>
-                    <li id='products'>Empreendimentos</li>
-                    <a href="index.php?page_id=220"><li>Contato</li></a>
+                    <li class='linkTop' alt="Link para o topo da página">Home</li>
+                    <li class='linkDescription' alt="Nossa história">Institucional</li>
+                    <li class='linkProducts' alt="Empreendimentos">Empreendimentos</li>
+                    <a href="index.php?page_id=220" alt="Entre em contato!"><li>Contato</li></a>
                 </ul>
                 <div class="dropNav-items">
-                    <a href="index.php?page_id=129">Home</a>
-                    <br>
-                    <a href="index.php?page_id=30">Institucional</a>
-                    <br>
-                    <a href="index.php?page_id=66">Empreendimentos</a>
-                    <br>
-                    <a href="mailto:construtora@torreaovillarim.com.br" alt="link para mensagem por Email">
+                    <a class='linkTop' alt="Link para o topo da página">Home</a>
+                    <hr>
+                    <a class='linkDescription' alt="Nossa história">Institucional</a>
+                    <hr>
+                    <a class='linkProducts' alt="Empreendimentos">Empreendimentos</a>
+                    <hr>
+                    <a href="index.php?page_id=220" alt="Entre em contato!">
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>

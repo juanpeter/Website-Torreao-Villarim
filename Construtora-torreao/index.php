@@ -14,8 +14,10 @@
 			</div>
 		<div class="blog-post">
 			<hr>
-			<div class="description">
-				<h2>Sobre a Torreão Villarim</h2>
+			<div class="row description">
+				<h2 class='title'>Sobre a Torreão Villarim</h2>
+			</div>
+			<div class='row'>
 				<p>A Torreão Villarim trabalha há 25 anos no ramo da construção cívil.</p>
 				<p>No início das suas atividades, dedicava-se apenas a obras de licitação direcionadas ao Governo como:  Escolas, hospitais, prédios públicos entre outros, que eram o seu principal foco.</p>
 				<p>Com o passar do tempo e atendendo a evolução do mercado imobiliário em nossa cidade, surgiram oportunidades para que a construtora desenvolvesse também projetos para a construção de edifício residenciais onde a qualidade e o design avançados de seus empreendimentos se destacam.</p>
@@ -24,7 +26,7 @@
 			</div>
 			<hr>
 		<div class="row products">
-			<h2>Empreendimentos</h2>
+			<h2 class='title'>Empreendimentos</h2>
 		</div>
 		<div class='row'>
 			<div class="col-md-4 option">
