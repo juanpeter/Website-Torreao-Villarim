@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main>
+<main data-spy="scroll">
 	<div class='container-fluid'>
 			<div class='banner'>
 				<div class="overlay-main"></div>
@@ -12,9 +12,9 @@
 					</a>
 				</div>
 			</div>
-		<div class="blog-post">
+		<div class='description'>
 			<hr>
-			<div class="row description">
+			<div class="row">
 				<h2 class='title'>Sobre a Torreão Villarim</h2>
 			</div>
 			<div class='row'>
@@ -24,32 +24,34 @@
 				<p>Hoje somos referência em nosso seguimento, e a ideia é sempre evoluir e oferecer o melhor da construção tanto para obras públicas quanto para a rede privada.</p>
 				<p> Seja bem vindo!</p>
 			</div>
+		</div>
+		<div class='products'>
 			<hr>
-		<div class="row products">
-			<h2 class='title'>Empreendimentos</h2>
-		</div>
-		<div class='row'>
-			<div class="col-md-4 option">
-				<a href="index.php?page_id=66">
-				<div class="overlay"></div>
-						<img class="img-fluid" src="<?php echo get_template_directory_uri().'/images/p.pinheiro-min2.jpg'; ?>" alt="Empreendimentos prontos para morar!"/>
-					<p>Prontos para morar</p>
-				</a>
+			<div class="row">
+				<h2 class='title'>Empreendimentos</h2>
 			</div>
-			<div class="col-md-4 option">
-				<a href="index.php?page_id=180">
+			<div class='row'>
+				<div class="col-md-4 option">
+					<a href="index.php?page_id=66">
 					<div class="overlay"></div>
-						<img class="img-fluid" src="<?php echo get_template_directory_uri().'/images/res2.png'; ?>" alt="Empreendimentos prontos para morar!"/>
-					<p>Concluídos</p>
-				</a>
-			</div>
-			<div class="col-md-4 option">
-				<a href="index.php?page_id=203">
-					<div class="overlay"></div>
-						<img class="img-fluid" src="<?php echo get_template_directory_uri().'/images/feirinhaTambau2.png'; ?>" alt="Empreendimentos prontos para morar!"/>
-					<p>Obras Públicas</p>
-				</a>
+							<img class="img-fluid" src="<?php echo get_template_directory_uri().'/images/p.pinheiro-min2.jpg'; ?>" alt="Empreendimentos prontos para morar!"/>
+						<p>Prontos para morar</p>
+					</a>
+				</div>
+				<div class="col-md-4 option">
+					<a href="index.php?page_id=180">
+						<div class="overlay"></div>
+							<img class="img-fluid" src="<?php echo get_template_directory_uri().'/images/res2.png'; ?>" alt="Empreendimentos prontos para morar!"/>
+						<p>Concluídos</p>
+					</a>
+				</div>
+				<div class="col-md-4 option">
+					<a href="index.php?page_id=203">
+						<div class="overlay"></div>
+							<img class="img-fluid" src="<?php echo get_template_directory_uri().'/images/feirinhaTambau2.png'; ?>" alt="Empreendimentos prontos para morar!"/>
+						<p>Obras Públicas</p>
+					</a>
+				</div>
 			</div>
 		</div>
-	</div>
 <?php get_footer(); ?>

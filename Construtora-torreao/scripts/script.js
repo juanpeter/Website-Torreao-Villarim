@@ -6,9 +6,12 @@ let scroll;
 //Functions to call at the beginning//
 //If the document is ready, call these functions
 $(document).ready(function() {
-    // // TO DO: work on this later
-    // //dims opacity of elements onLoad, to be used with scrollFade()
-    // $('.blog-post').children().css({'opacity':'0'});
+    //Fade in for the banner
+    setTimeout(function(){
+        $('.banner').animate({
+            opacity:1,
+        },1500);
+    });
     navMobile();
     overlayMobile();
     scrollCheck();
@@ -23,8 +26,38 @@ $(window).resize(function(){
 //If window is scrolled, call these functions
 $(window).scroll(function(){
     scrollCheck();
-    //TO DO: work on this later
-    // scrollFade();
+    scrollFade();
+});
+
+function scrollFade() {
+    //Window current position!
+    let scroll = $(window).scrollTop();
+    //animates description elements on scroll, if it hasnt been called before
+    if (scroll >= 200 && $('.description').css('opacity') == '0') {
+        $('.description').animate({
+            opacity:'1',
+            left: '0px',
+        }, 1250);
+    }
+    //animates product elements on scroll, if it hasnt been called before
+    if (scroll >= 600 && $('.products').css('opacity') == '0') {
+        $('.products').animate({
+            opacity:'1',
+            right: '0px',
+        }, 1250);
+        setTimeout(function(){
+            rotation(0)},1250);
+    }
+}
+
+//If a dropNav link is clicked, call toggleNav
+$('.dropNav-items a').click(function(){
+    toggleNav();
+});
+
+//If the dropNav link is clicked, call toggleNav
+$('#toggleNav').click(function(){
+    toggleNav();
 });
 
 //scroll to top of website
@@ -47,7 +80,7 @@ $('.linkProducts').click(function(){
 });
 
 //Toggler for the nav
-$('#toggleNav').click(function(){
+function toggleNav(){
     //if toggleNav as the fa-bars class, open the div
     if ($('#toggleNav').hasClass('fa-bars')) {
         //Make it with less opacity
@@ -73,12 +106,6 @@ $('#toggleNav').click(function(){
                 height:'5em',
             },1000);
         }
-        //If not, it becomes 5em tall
-        else {
-            $('#dropNav').animate({
-                height:'5em',
-            },1000);
-        }
         //Change class to fa-bars, while removing fa-times
         $('#toggleNav').addClass('fa-bars');
         $('#toggleNav').removeClass('fa-times');
@@ -96,19 +123,8 @@ $('#toggleNav').click(function(){
         });
         }, 1000);
     }
-});
+};
 
-//Functions called onScroll//
-// //TO DO: work on this
-// function scrollFade() {
-//     //Window current position!
-//     let scroll = $(window).scrollTop();
-//     if (scroll >= 200) {
-//         $('.blog-post').children().animate({
-//             opacity:'1',
-//         }, 1000);
-//     }
-// }
 //check scrolling interactions
 function scrollCheck() {
     //Window current position!
@@ -184,3 +200,17 @@ function overlayMobile(){
         );
     }
 };
+
+//Rotates elements before scroll
+function rotation(d) {
+    var elem = $('.option');
+
+    $({deg: 15}).animate({deg: d}, {
+        duration: 1000,
+        step: function(now){
+            elem.css({
+                 transform: "rotate(" + now + "deg)"
+            });
+        }
+    });
+}
