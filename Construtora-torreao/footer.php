@@ -4,16 +4,16 @@
             <div class='container-fluid'>
                 <div class='row text-center'>
                     <div class='col-md-3'>
-                        <h2 class='linkTop'>Home</h2>
+                        <h2 alt="Link para a home"><a href='index.php?page_id=129'>Home</a></h2>
                     </div>
                     <div class='col-md-3'>
-                        <h2 class='linkDescription'>Institucional</h2>
+                        <h2 alt="Link para nossa história"><a href='index.php?page_id=30'>Institucional</a></h2>
                     </div>
                     <div class='col-md-3'>
-                        <h2 class='linkProducts'>Empreendimentos</h2>
+                        <h2 alt="Link para nossos empreendimentos"><a href='index.php?page_id=226'>Empreendimentos</a></h2>
                     </div>
                     <div class='col-md-3'>
-                        <h2><a href="index.php?page_id=220">Contato</a></h2>
+                        <h2 alt="Link para entrar em contato"><a href="index.php?page_id=220">Contato</a></h2>
                     </div>
                 </div>
                 <div class='row'>
@@ -27,7 +27,7 @@
                 </div>
                 <div class='row address'>
                     <div class='col-md-12 address'>
-                        <p><a href="tel:83-99839-2112"><i class="fas fa-headset"></i> (83)99839-2112</a></p>
+                        <p><a href="tel:83-99839-2112"><i class="fas fa-headset"></i> Ligue para nós: (83)99839-2112</a></p>
                     </div>
                 </div>
                 <div class='row'>

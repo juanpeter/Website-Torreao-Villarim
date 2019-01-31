@@ -33,14 +33,14 @@ function scrollFade() {
     //Window current position!
     let scroll = $(window).scrollTop();
     //animates description elements on scroll, if it hasnt been called before
-    if (scroll >= 200 && $('.description').css('opacity') == '0') {
+    if (scroll >= 100 && $('.description').css('opacity') == '0') {
         $('.description').animate({
             opacity:'1',
             left: '0px',
         }, 1250);
     }
     //animates product elements on scroll, if it hasnt been called before
-    if (scroll >= 600 && $('.products').css('opacity') == '0') {
+    if (scroll >= 500 && $('.products').css('opacity') == '0') {
         $('.products').animate({
             opacity:'1',
             right: '0px',
