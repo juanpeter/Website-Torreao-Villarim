@@ -43,12 +43,22 @@ nav ul li {
 }
 nav ul li:hover {
     cursor: pointer;
+    font-weight: 400;
     color: #2e3192;
     transition: 2s;
 }
 nav img {
     height: 80px;
     float: left;
+}
+.scrollspy {
+    position: relative;
+    z-index: 101;
+    background-color: #202265;
+    height: 5px;
+    width: 3em;
+    padding: 0 1em;
+    margin: 0 1em;
 }
 .mobile-view {
     display: none;
@@ -149,7 +159,7 @@ nav img {
     color: #2e3192;
 }
 .blog-post a:hover {
-    color: #8781bd;
+    color: #E6AF2E;
     transition: color 1s;
 }
 .description {
@@ -209,17 +219,12 @@ footer {
     position: relative;
 }
 footer h2 {
-    cursor: pointer;
     font-size: 1.25em;
     padding-bottom: 1em;
     border-left: solid 1px #1e205c;
 }
 footer .col-md-3:first-child h2{
     border-left: none;
-}
-footer h2:hover {
-    color: #E6AF2E;
-    transition: 1s;
 }
 footer a:hover {
     color: #E6AF2E;
@@ -245,7 +250,7 @@ footer a:hover {
     margin: 1em 1em 0 0;
 }
 .circle:hover {
-    background-color: #fff;
+    background-color: #E6AF2E;
     transition: 1s;
 }
 .circle i {
@@ -345,10 +350,8 @@ footer a:hover {
         font-size: 3em;
         padding: 0;
     }
-    /*TO DO: check if this is necessary at all*/
-    .mobile-view:hover {
-        color: #2e3192;
-        transition: color 1s;
+    .scrollspy {
+        display: none;
     }
 }
 /*Footer adjustment*/

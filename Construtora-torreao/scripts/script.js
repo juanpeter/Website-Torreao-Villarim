@@ -14,18 +14,18 @@ $(document).ready(function() {
     });
     navMobile();
     overlayMobile();
-    scrollCheck();
 });
 
 //If the window is resized, call these functions
 $(window).resize(function(){
     navMobile(),
     overlayMobile()
+    //make the nav opacity 1
+    $('header nav').css({'background-color':'rgba(255,255,255, 1)'});
 });
 
 //If window is scrolled, call these functions
 $(window).scroll(function(){
-    scrollCheck();
     scrollFade();
 });
 
@@ -58,25 +58,6 @@ $('.dropNav-items a').click(function(){
 //If the dropNav link is clicked, call toggleNav
 $('#toggleNav').click(function(){
     toggleNav();
-});
-
-//scroll to top of website
-$('.linkTop').click(function(){
-    $('html,body').animate({
-        scrollTop: $('.banner').offset().top -100
-    }, 1000);
-})
-//scroll to description section
-$('.linkDescription').click(function(){
-    $('html,body').animate({
-        scrollTop: $('.description').offset().top-140
-    }, 1000);
-})
-//scroll to products section
-$('.linkProducts').click(function(){
-    $('html,body').animate({
-        scrollTop: $('.products').offset().top-140
-    }, 1000);
 });
 
 //Toggler for the nav
@@ -125,27 +106,6 @@ function toggleNav(){
     }
 };
 
-//check scrolling interactions
-function scrollCheck() {
-    //Window current position!
-    let scroll = $(window).scrollTop();
-    //Check if the window width is higher than 720
-    if ($(window).width() > 720) {
-        //If scroll is higher than 100px, header becomes smaller and full color
-        if (scroll == 100) {
-            $('header nav').css({'background-color':'rgba(255,255,255, 1)'});
-        }
-        //If scroll is smaller than 100px, header becomes bigger and transparent
-        if (scroll == 0) {
-            $('header nav').css({'background-color':'rgba(255,255,255, 0.75)'});
-        }
-    }
-    //If its a mobile view
-    else {
-        //Break the function
-        return;
-    }
-}
 //if the window is widder than 720px, close the nav
 function navMobile(){
     if ($(window).width() > 720) {
@@ -214,3 +174,35 @@ function rotation(d) {
         }
     });
 }
+
+//Move .scrollspy on click. hover and mouse interaction
+
+//make navbar items an array
+const navArray = jQuery.makeArray($('nav ul li'));
+
+$(navArray).click(function(){
+    if (this == navArray[0]) {
+        $('.scrollspy').animate({
+            left: '0',
+            width: '3em',
+        },1000);
+    };
+    if (this == navArray[1]) {
+        $('.scrollspy').animate({
+            left: '5em',
+            width: '6.5em',
+        },1000);
+    };
+    if (this == navArray[2]) {
+        $('.scrollspy').animate({
+            left: '13.6em',
+            width: '9em',
+        },1000);
+    };
+    if (this == navArray[3]) {
+        $('.scrollspy').animate({
+            left: '24.75em',
+            width: '4em',
+        },1000);
+    };
+});

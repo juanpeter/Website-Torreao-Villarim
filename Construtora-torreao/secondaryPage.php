@@ -1,28 +1,30 @@
 <?php /* Template Name: Secondary Page*/ ?>
 
-<?php 
-if(is_page(129)) {
-	get_header();
-}
-else {
-	get_header('secondary');
-}
- wp_head();
-?>
+<?php get_header();?>
 
 <div class='container-fluid'>
 
 <div style='padding-top: 5.5em'></div>
 <!--To get posts-->
 <?php
-			if ( have_posts() ) : while ( have_posts() ) : the_post();
-  	
-				get_template_part( 'content', get_post_format() );
-  
-			endwhile; endif;
-			?>
+	if ( have_posts() ) : while ( have_posts() ) : the_post();
 
-<?php 
+		get_template_part( 'content', get_post_format() );
+
+	endwhile; endif;
+	?>
+
+<?php
+// If it is the main page
+	if(is_page(129)) {
+		echo '<style>
+			nav ul li:nth-child(1) {
+				font-weight: 400;
+				color: #2e3192;
+			}
+		</style>';
+	}
+// If it is the 'empreendimentos' page
 	if(is_page(226)) {
 		include 'empreendimentos.php';
 		echo '<style>
@@ -45,6 +47,52 @@ else {
 			}
 			.products .title {
 				display: none;
+			}
+			.scrollspy {
+				left: 13.6em;
+            	width: 9em;
+			}
+			</style>';
+		}
+		if(is_page(66)) {
+			echo '<style>
+			.scrollspy {
+				left: 13.6em;
+            	width: 9em;
+			}
+			</style>';
+		}
+		if(is_page(180)) {
+			echo '<style>
+			.scrollspy {
+				left: 13.6em;
+            	width: 9em;
+			}
+			</style>';
+		}
+		if(is_page(203)) {
+			echo '<style>
+			.scrollspy {
+				left: 13.6em;
+            	width: 9em;
+			}
+			</style>';
+		}
+// If it is the 'institucional' page
+		if(is_page(30)) {
+			echo '<style>
+			.scrollspy {
+				left: 5em;
+            	width: 6.5em;
+			}
+			</style>';
+		}
+//If it is the 'contato' page
+		if(is_page(220)) {
+			echo '<style>
+			.scrollspy {
+				left: 24.75em;
+            	width: 4em;
 			}
 			</style>';
 		}
