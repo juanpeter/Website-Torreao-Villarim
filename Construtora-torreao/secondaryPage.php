@@ -15,19 +15,15 @@
 	?>
 
 <?php
-// If it is the main page
-	if(is_page(129)) {
-		echo '<style>
-			nav ul li:nth-child(1) {
-				font-weight: 400;
-				color: #2e3192;
-			}
-		</style>';
-	}
+
 // If it is the 'empreendimentos' page
 	if(is_page(226)) {
 		include 'empreendimentos.php';
 		echo '<style>
+			nav ul li:nth-child(3) {
+				font-weight: 400;
+				color: #2e3192;
+			}
 			.blog-post {
 			padding-bottom: 0;
 			}
@@ -56,6 +52,10 @@
 		}
 		if(is_page(66)) {
 			echo '<style>
+			nav ul li:nth-child(3) {
+				font-weight: 400;
+				color: #2e3192;
+			}
 			.scrollspy {
 				left: 13.6em;
             	width: 9em;
@@ -64,6 +64,10 @@
 		}
 		if(is_page(180)) {
 			echo '<style>
+			nav ul li:nth-child(3) {
+				font-weight: 400;
+				color: #2e3192;
+			}
 			.scrollspy {
 				left: 13.6em;
             	width: 9em;
@@ -72,6 +76,10 @@
 		}
 		if(is_page(203)) {
 			echo '<style>
+			nav ul li:nth-child(3) {
+				font-weight: 400;
+				color: #2e3192;
+			}
 			.scrollspy {
 				left: 13.6em;
             	width: 9em;
@@ -81,6 +89,10 @@
 // If it is the 'institucional' page
 		if(is_page(30)) {
 			echo '<style>
+			nav ul li:nth-child(2) {
+				font-weight: 400;
+				color: #2e3192;
+			}
 			.scrollspy {
 				left: 5em;
             	width: 6.5em;
@@ -90,6 +102,10 @@
 //If it is the 'contato' page
 		if(is_page(220)) {
 			echo '<style>
+			nav ul li:nth-child(4) {
+				font-weight: 400;
+				color: #2e3192;
+			}
 			.scrollspy {
 				left: 24.75em;
             	width: 4em;

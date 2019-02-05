@@ -25,5 +25,15 @@
 				<p> Seja bem vindo!</p>
 			</div>
 		</div>
-	<?php include 'empreendimentos.php'; ?>
+	<?php include 'empreendimentos.php'; 
+	// If it is the main page
+	if(is_page(129)) {
+		echo '<style>
+			nav ul li:nth-child(1) {
+				font-weight: 400;
+				color: #2e3192;
+			}
+		</style>';
+	}
+	?>
 <?php get_footer(); ?>
