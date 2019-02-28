@@ -1,9 +1,12 @@
 <div class='section-box CTA'>
-<?php
-    $post_id = 220;
-    $queried_post = get_post($post_id);
-    $title = $queried_post->post_title;
-    echo $title;
-    echo $queried_post->post_content;
-    ?>
+        <i class="fas fa-envelope"></i>
+        <h2>Está interessado? Entre em contato conosco!</h2>
+        <?php
+           if ( have_posts() ) : while ( have_posts() ) : the_post();
+
+           get_template_part( 'content', get_post_format() );
+   
+       endwhile; endif;
+       ?>
+    
 </div>

@@ -14,8 +14,10 @@
 					</a>
 				</div>
 			</div>
-			<?php include 'buttons.php'; ?>
-		<div class='section-box'>
+
+		<?php include 'buttons.php'; ?>
+
+		<!-- <div class='section-box'>
 			<div class='row'>
 				<div class='col-md-6'>
 					<div class="row">
@@ -26,12 +28,12 @@
 					</div>
 				</div>
 				<div class='col-md-6'>
-					<div class='row'>
+					<div class='row'> -->
 					<!-- <div class="overlay"></div> -->
-					<img class ='post-thumbnail' src='<?php echo get_template_directory_uri().'/images/p.pinheiro.jpg'; ?>'>
+					<!-- <img class ='post-thumbnail' src='<?php echo get_template_directory_uri().'/images/p.pinheiro.jpg'; ?>'>
 					</div>
 				</div>
-			</div>
+			</div> -->
 			<!-- <div class="row">
 				<h2 class='title description'><a href='index.php?page_id=30'>Sobre a Torreão Villarim</h2></a>
 			</div>
@@ -42,7 +44,7 @@
 				<p>Hoje somos referência em nosso seguimento, e a ideia é sempre evoluir e oferecer o melhor da construção tanto para obras públicas quanto para a rede privada.</p>
 				<p> Seja bem vindo!</p>
 			</div> -->
-		</div>
+		<!-- </div>
 		<div class='section-box'>
 			<div class='row'>
 				<div class='col-md-6'>
@@ -54,9 +56,9 @@
 					</div>
 				</div>
 				<div class='col-md-6'>
-					<div class='row'>
+					<div class='row'> -->
 					<!-- <div class="overlay"></div> -->
-					<img class ='post-thumbnail' src='<?php echo get_template_directory_uri().'/images/p.pinheiro.jpg'; ?>'>
+					<!-- <img class ='post-thumbnail' src='<?php echo get_template_directory_uri().'/images/p.pinheiro.jpg'; ?>'>
 					</div>
 				</div>
 			</div>
@@ -72,13 +74,13 @@
 					</div>
 				</div>
 				<div class='col-md-6'>
-					<div class='row'>
+					<div class='row'> -->
 					<!-- <div class="overlay"></div> -->
-					<img class ='post-thumbnail' src='<?php echo get_template_directory_uri().'/images/p.pinheiro.jpg'; ?>'>
+					<!-- <img class ='post-thumbnail' src='<?php echo get_template_directory_uri().'/images/p.pinheiro.jpg'; ?>'>
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<?php include 'callToAction.php'; ?>
 	<!-- <?php include 'empreendimentos.php'; 
 	// If it is the main page
