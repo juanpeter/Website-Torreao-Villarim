@@ -122,7 +122,7 @@ nav img {
         top: -800px;
     }
     100% {
-        top: 120px;
+        top: 110px;
     }
 }
 .banner-text button:hover {
@@ -285,11 +285,16 @@ nav img {
         width: 70px;
         transform: scale(1.55);
     }
+    .option-button p{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 600px){
     .option-button i{
         font-size: 24px;
     }
     .option-button p{
-        font-size: 8px;
+        font-size: 10px;
     }
 }
 .post-thumbnail{
@@ -344,10 +349,31 @@ nav img {
     background-color: #8781BD;
     color: #fff;
 }
+.CTA-message{
+    text-align: center;
+}
+.CTA-message h2{
+   font-size: 3em;
+   font-weight: bold;
+}
 .CTA i{
-    float: left;
     font-size: 90px;
-    padding: 48px;
+    padding-right: 90px;
+    float: right;
+}
+.CTA-button input{
+    width: 210px;
+    height: 50px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #2e3192;
+    border: #8781bd 2px solid;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.CTA-button input:hover{
+    background-color: #1e205c;
+    transition: 1s;
 }
 .description {
     position: relative;
@@ -501,7 +527,8 @@ footer a:hover {
         padding-top: 5em;
     }
     .overlay-main {
-        height: calc(100% - 5em);
+        height: 100%;
+        top: 0;
     }
     nav ul li{
         display: none;
@@ -526,9 +553,24 @@ footer a:hover {
     .scrollspy {
         display: none;
     }
+    @keyframes top-down {
+        0% {
+            top: -800px;
+        }
+        100% {
+            top: 120px;
+        }
+    }
+    .option-button{
+        height: 80px;
+        width: 100px;
+    }
+    .option-button i{
+        font-size: 30px;
+    }
 }
-/*Footer adjustment*/
-@media screen and (max-width: 767px) {
+/*TO-DO: necessery? Footer adjustment*/
+/* @media screen and (max-width: 767px) {
     footer {
         text-align: center;
     }
@@ -539,8 +581,7 @@ footer a:hover {
     .copyright img {
         float: unset;
     }
-}
-/*Just adapting the title*/
+} */
 @media screen and (max-width: 500px) {
     .banner-text {
         font-size: 0.75em;
@@ -553,7 +594,45 @@ footer a:hover {
             top: -800px;
         }
         100% {
-            top: 120px;
+            top: 100px;
         }
+    }
+}
+@media screen and (max-width: 400px) {
+    .banner-text h2{
+        font-size: 2em;
+    }
+    .banner-text img {
+        height: 80px;
+    }
+    @keyframes top-down {
+        0% {
+            top: -800px;
+        }
+        100% {
+            top: 80px;
+        }
+    }
+}
+@media screen and (max-width: 360px) {
+    .banner-text{
+        margin: 0 10px;
+    }
+    .option-button{
+        height: 60px;
+        width: 57px;
+    }
+    .option-button i{
+        font-size: 16px;
+    }
+    .option-button p{
+        font-size: 7px;
+    }
+    .banner-text button {
+        height: 30px;
+        font-size: 16px;
+    }
+    .option-row{
+        padding-bottom: 20px;
     }
 }
