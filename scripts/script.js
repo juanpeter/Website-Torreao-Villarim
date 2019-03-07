@@ -185,25 +185,25 @@ $(navArray).click(function(){
     if (this == navArray[0]) {
         $('.scrollspy').animate({
             left: '0',
-            width: '48px',
+            width: '50px',
         },1000);
     };
     if (this == navArray[1]) {
         $('.scrollspy').animate({
-            left: '5em',
-            width: '105px',
+            left: '88px',
+            width: '102px',
         },1000);
     };
     if (this == navArray[2]) {
         $('.scrollspy').animate({
-            left: '12.5em',
-            width: '80px',
+            left: '228px',
+            width: '70px',
         },1000);
     };
     if (this == navArray[3]) {
         $('.scrollspy').animate({
-            left: '24.75em',
-            width: '4em',
+            left: '338px',
+            width: '64px',
         },1000);
     };
 });

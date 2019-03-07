@@ -1,6 +1,6 @@
 <div class='section-box CTA'>
         <i class="fas fa-envelope"></i>
-        <h2>Está interessado? Entre em contato conosco!</h2>
+        <h2>Está interessado?</h2>
         <?php
            if ( have_posts() ) : while ( have_posts() ) : the_post();
 
@@ -8,5 +8,4 @@
    
        endwhile; endif;
        ?>
-    
 </div>
