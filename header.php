@@ -6,7 +6,7 @@
         <title>Construtora Torreão Villarim</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Google Fonts CDN-->
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
     <!--Normalize.css-->
         <link  href="<?php echo get_bloginfo('template_directory'); ?>/styles/normalize.css" rel="stylesheet">
     <!--Bootstrap CSS CDN-->

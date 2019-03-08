@@ -3,6 +3,15 @@
         </div><!--End of container-fluid!-->
         <footer>
             <div class='container-fluid'>
+                <!-- <div class='row'>
+                    <div class='col-md-12 address'>
+                        <address>
+                            <p><a target='_blank' href='https://www.google.com/maps/place/Av.+Amazonas,+290+-+Castelo+Branco,+Jo%C3%A3o+Pessoa+-+PB,+58033-455/@-7.117038,-34.8591147,17z/data=!4m13!1m7!3m6!1s0x7acdd56e2bc7257:0xa2ea69f47cd96cf!2sAv.+Amazonas,+290+-+Castelo+Branco,+Jo%C3%A3o+Pessoa+-+PB,+58033-455!3b1!8m2!3d-7.1170047!4d-34.8589245!3m4!1s0x7acdd56e2bc7257:0xa2ea69f47cd96cf!8m2!3d-7.1170047!4d-34.8589245'>
+                            <i class="fas fa-map-marker-alt"></i> Av Amazonas, 290, Joao Pessoa - PB, 58030-140
+                            </a></p>
+                        </address>
+                    </div>
+                </div> -->
                 <div class='row'>
                     <div class='col-md-12 address'>
                         <address>

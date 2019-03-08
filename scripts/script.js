@@ -37,18 +37,14 @@ function scrollFade() {
     if (scroll >= 200 && $('.description').css('opacity') == '0') {
         $('.description').animate({
             opacity:'1',
-            left: '0px',
         }, 1500);
-    }
-    //animates product elements on scroll, if it hasnt been called before
-    if (scroll >= 600 && $('.products').css('opacity') == '0') {
-        $('.products').animate({
+        $('.description button').animate({
             opacity:'1',
-            right: '0px',
-        }, 1500);
+            left:0,
+        },1750);
+    }
         setTimeout(function(){
             rotation(0)},500);
-    }
 }
 
 //If a dropNav link is clicked, call toggleNav
@@ -207,7 +203,6 @@ $(navArray).click(function(){
         },1000);
     };
 });
-
 $('.option-button').mouseout(
     function(){
         $(this).animate({

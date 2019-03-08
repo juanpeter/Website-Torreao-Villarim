@@ -3,9 +3,6 @@ body {
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    background-image:
-    linear-gradient(rgba(135,129,189,0.5),rgba(91,83,158,0.8)),
-    url('../images/bg-white.png');
 }
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
@@ -21,9 +18,7 @@ section {
     margin-bottom: -1em;
 }
 main .container-fluid {
-    -webkit-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
-    box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
+    padding: 0;
 }
 /*Header tags*/
 header nav {
@@ -33,7 +28,7 @@ header nav {
     position: fixed;
     height: 90px;
     width: 100%;
-    padding: 5px 15px;
+    padding: 10px 75px;
     z-index: 100;
 }
 nav ul {
@@ -54,14 +49,27 @@ nav ul li:hover {
     transition: 2s;
 }
 nav img {
-    height: 80px;
+    height: 100%;
+    max-height: 80px;
     float: left;
+}
+.blue-button{
+    font-size: 24px;
+    color: #fff;
+    background-color: #474bc5;
+    border: #8781bd 2px solid;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.blue-button:hover{
+    background-color: #2e3192;
+    transition: 1s;
 }
 /*TO-DO - Fix width for first element*/
 .scrollspy {
     position: relative;
     z-index: 101;
-    background-color: #202265;
+    background-color: #474bc5;
     height: 5px;
     width: 50px;
     padding: 0 1em;
@@ -73,7 +81,7 @@ nav img {
 /*DropNav*/
 .dropNav-items {
     padding: 3em 0;
-    color: #1e205c;
+    color: #2e3192;
     display: none;
     text-align: center;
     font-size: 2em;
@@ -110,12 +118,6 @@ nav img {
 .banner-text button {
     width: 210px;
     height: 50px;
-    font-size: 24px;
-    color: #fff;
-    background-color: #2e3192;
-    border: #8781bd 2px solid;
-    border-radius: 15px;
-    cursor: pointer;
 }
 @keyframes top-down {
     0% {
@@ -124,10 +126,6 @@ nav img {
     100% {
         top: 110px;
     }
-}
-.banner-text button:hover {
-    background-color: #1e205c;
-    transition: 1s;
 }
 @media screen and (min-width: 1960px) {
     .banner-text {
@@ -158,7 +156,7 @@ nav img {
 .banner-text img {
     height: 169px;
 }
-.banner-text h2 {
+.banner-text h1 {
     font-size: 3em;
     font-weight: bold;
     letter-spacing: 5px;    
@@ -195,7 +193,7 @@ nav img {
     display: flex;
     justify-content: space-around;
     padding-bottom: 40px;
-    background-color: #EFEFEF;
+    background-color: #fff;
 }
 /*TO-DO you'll have to adjust scale between screen widths*/
 .option-button{
@@ -240,7 +238,6 @@ nav img {
     100% {
         bottom: 20px;
         border-bottom-width: 8px;
-        background-color: #e5e5e5;
     }
 }
 @media screen and (max-width: 1130px){
@@ -296,6 +293,28 @@ nav img {
     .option-button p{
         font-size: 10px;
     }
+}
+/*Description row*/
+.description{
+    text-align: center;
+    opacity: 0;
+}
+.description h2{
+    font-weight: 300;
+    font-size: 1.75em;
+    line-height: 2em;
+    margin: 15px 15%;
+}
+.description button{
+    height: 2.5em;
+    position: relative;
+    left: -800px;
+    opacity: 0;
+}
+.blue{
+    color: #2E3192;
+    font-weight: bold;
+    font-size: 1.25em;
 }
 .post-thumbnail{
     max-height: 400px;
@@ -361,25 +380,8 @@ nav img {
     padding-right: 90px;
     float: right;
 }
-.CTA-button input{
-    width: 210px;
-    height: 50px;
-    font-size: 24px;
-    color: #fff;
-    background-color: #2e3192;
-    border: #8781bd 2px solid;
-    border-radius: 15px;
-    cursor: pointer;
-}
-.CTA-button input:hover{
-    background-color: #1e205c;
-    transition: 1s;
-}
-.description {
-    position: relative;
-    left: -800px;
-    opacity: 0;
-    padding-bottom: 0;
+.CTA input{
+    height: 2.5em;
 }
 .products {
     position: relative;
@@ -431,7 +433,7 @@ footer {
 footer h2 {
     font-size: 1.25em;
     padding-bottom: 1em;
-    border-left: solid 1px #1e205c;
+    border-left: solid 1px #2e3192;
 }
 footer .col-md-3:first-child h2{
     border-left: none;
@@ -599,7 +601,7 @@ footer a:hover {
     }
 }
 @media screen and (max-width: 400px) {
-    .banner-text h2{
+    .banner-text h1{
         font-size: 2em;
     }
     .banner-text img {
