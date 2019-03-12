@@ -4,49 +4,52 @@
 
 <div class='container-fluid'>
 
-<div style='padding-top: 5.5em'></div>
 <!--To get posts-->
 <?php
+
+
 	if ( have_posts() ) : while ( have_posts() ) : the_post();
 
-		get_template_part( 'content', get_post_format() );
+		get_template_part('content', get_post_format() );
 
 	endwhile; endif;
 	?>
 
 <?php
 
-// If it is the 'empreendimentos' page
+	if (! is_page(129)){
+		echo '<style>
+		.blog-post{
+		padding-top: 100px;
+		}
+		</style>';
+	}
+// If it is the 'serviços' page
 	if(is_page(226)) {
-		include 'empreendimentos.php';
+		// include 'empreendimentos.php';
 		echo '<style>
 			nav ul li:nth-child(3) {
 				font-weight: 400;
 				color: #2e3192;
 			}
-			.blog-post {
-			padding-bottom: 0;
-			}
 			.products {
 				position: relative;
 				right: 0;
 				background-color: #fff;
-				padding: 2em;
-				padding-top: 0;
 				opacity: 1;
+			}
+			.title.products{
+				display: none;
 			}
 			.option {
 				transform: rotate(0deg);
-			}
-			hr {
-				opacity: 0;
 			}
 			.products .title {
 				display: none;
 			}
 			.scrollspy {
-				left: 13.6em;
-            	width: 9em;
+				left: 228px;
+            	width: 70px;
 			}
 			</style>';
 		}
@@ -57,10 +60,11 @@
 				color: #2e3192;
 			}
 			.scrollspy {
-				left: 13.6em;
-            	width: 9em;
+				left: 228px;
+            	width: 70px;
 			}
 			</style>';
+			include 'callToAction.php';
 		}
 		if(is_page(180)) {
 			echo '<style>
@@ -69,8 +73,8 @@
 				color: #2e3192;
 			}
 			.scrollspy {
-				left: 13.6em;
-            	width: 9em;
+				left: 228px;
+            	width: 70px;
 			}
 			</style>';
 		}
@@ -81,24 +85,39 @@
 				color: #2e3192;
 			}
 			.scrollspy {
-				left: 13.6em;
-            	width: 9em;
+				left: 228px;
+            	width: 70px;
 			}
 			</style>';
 		}
 // If it is the 'institucional' page
 		if(is_page(30)) {
+			// include 'empreendimentos.php';
+			include 'callToAction.php';
 			echo '<style>
 			nav ul li:nth-child(2) {
 				font-weight: 400;
 				color: #2e3192;
 			}
 			.scrollspy {
-				left: 5em;
-            	width: 6.5em;
+				left: 88px;
+            	width: 102px;
+			}
+			.products {
+				position: relative;
+				right: 0;
+				background-color: #fff;
+				opacity: 1;
+			}
+			.option {
+				transform: rotate(0deg);
+			}
+			.products.title {
+				display: none;
 			}
 			</style>';
 		}
+//TO-DO tirar isso aqui?
 //If it is the 'contato' page
 		if(is_page(220)) {
 			echo '<style>
@@ -107,11 +126,12 @@
 				color: #2e3192;
 			}
 			.scrollspy {
-				left: 24.75em;
-            	width: 4em;
+				left: 338px;
+            	width: 64px;
 			}
 			</style>';
 		}
 ?>
+</div>
 <!--Get the footer-->
 <?php get_footer(); ?>

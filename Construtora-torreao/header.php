@@ -6,7 +6,7 @@
         <title>Construtora Torreão Villarim</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Google Fonts CDN-->
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500" rel="stylesheet">
     <!--Normalize.css-->
         <link  href="<?php echo get_bloginfo('template_directory'); ?>/styles/normalize.css" rel="stylesheet">
     <!--Bootstrap CSS CDN-->
@@ -22,13 +22,14 @@
         <header>
             <nav id="dropNav">
                 <a href="index.php?page_id=129">
-                    <img src="<?php echo get_template_directory_uri().'/images/logoTipo.png'; ?>" />
+                    <img src="<?php echo get_template_directory_uri().'/images/headerLogo.png'; ?>" />
                 </a>
-                <i class="fas fa-bars mobile-view" id="toggleNav"></i>
+                <!--TO-DO work on pages and then show this!-->
+                <!-- <i class="fas fa-bars mobile-view" id="toggleNav"></i>
                 <ul>
                 <li alt="Link para a home"><a href='index.php?page_id=129'>Home</a></li>
                     <li alt="Link para nossa história"><a href='index.php?page_id=30'>Institucional</a></li>
-                    <li alt="Link para nossos empreendimentos"><a href='index.php?page_id=226'>Empreendimentos</a></li>
+                    <li alt="Link para nossos Serviços"><a href='index.php?page_id=226'>Serviços</a></li>
                     <li alt="Link para entrar em contato"><a href="index.php?page_id=220">Contato</a></li>
                     <div class='scrollspy'></div>
                 </ul>
@@ -37,11 +38,11 @@
                     <hr>
                     <a href='index.php?page_id=30' alt="Nossa história">Institucional</a>
                     <hr>
-                    <a href='index.php?page_id=226' alt="Empreendimentos">Empreendimentos</a>
+                    <a href='index.php?page_id=226' alt="Serviços">Serviços</a>
                     <hr>
                     <a href="index.php?page_id=220" alt="Entre em contato!">
                         Contato
-                    </a>
+                    </a> -->
                 </div>
             </nav>
         </header>

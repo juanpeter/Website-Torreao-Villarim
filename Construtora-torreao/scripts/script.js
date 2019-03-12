@@ -14,6 +14,7 @@ $(document).ready(function() {
     });
     navMobile();
     overlayMobile();
+    scrollFade()
 });
 
 //If the window is resized, call these functions
@@ -33,21 +34,17 @@ function scrollFade() {
     //Window current position!
     let scroll = $(window).scrollTop();
     //animates description elements on scroll, if it hasnt been called before
-    if (scroll >= 100 && $('.description').css('opacity') == '0') {
+    if (scroll >= 200 && $('.description').css('opacity') == '0') {
         $('.description').animate({
             opacity:'1',
-            left: '0px',
-        }, 1250);
-    }
-    //animates product elements on scroll, if it hasnt been called before
-    if (scroll >= 500 && $('.products').css('opacity') == '0') {
-        $('.products').animate({
+        }, 1500);
+        $('.description button').animate({
             opacity:'1',
-            right: '0px',
-        }, 1250);
-        setTimeout(function(){
-            rotation(0)},1250);
+            left:0,
+        },1750);
     }
+        setTimeout(function(){
+            rotation(0)},500);
 }
 
 //If a dropNav link is clicked, call toggleNav
@@ -84,7 +81,7 @@ function toggleNav(){
         //If the window is width is smaller than 720px, it becomes 5em tall
         if ($(window).width() <= 720){
             $('#dropNav').animate({
-                height:'5em',
+                height:'90px',
             },1000);
         }
         //Change class to fa-bars, while removing fa-times
@@ -111,7 +108,7 @@ function navMobile(){
     if ($(window).width() > 720) {
         //shrinks dropnav to its original size
         $('#dropNav').animate({
-            height:'5em',
+            height:'90px',
         },1000);
         //Change class to fa-bars, while removing fa-times
         $('#toggleNav').addClass('fa-bars');
@@ -123,7 +120,7 @@ function navMobile(){
     }
     //if the window is less than 720px, make the navBar smaller
     else {
-        $('header nav').css('height','5em');
+        $('header nav').css('height','90px');
          //Hides elements
          $('.dropNav-items').css('display','none');
          //Change class to fa-bars, while removing fa-times
@@ -184,25 +181,32 @@ $(navArray).click(function(){
     if (this == navArray[0]) {
         $('.scrollspy').animate({
             left: '0',
-            width: '3em',
+            width: '50px',
         },1000);
     };
     if (this == navArray[1]) {
         $('.scrollspy').animate({
-            left: '5em',
-            width: '6.5em',
+            left: '88px',
+            width: '102px',
         },1000);
     };
     if (this == navArray[2]) {
         $('.scrollspy').animate({
-            left: '13.6em',
-            width: '9em',
+            left: '228px',
+            width: '70px',
         },1000);
     };
     if (this == navArray[3]) {
         $('.scrollspy').animate({
-            left: '24.75em',
-            width: '4em',
+            left: '338px',
+            width: '64px',
         },1000);
     };
 });
+$('.option-button').mouseout(
+    function(){
+        $(this).animate({
+            'bottom':'0',
+            'border-bottom-width': '5px',
+        },300);
+    });

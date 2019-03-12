@@ -1,24 +1,22 @@
 /*Global values*/
 body {
     overflow-x: hidden;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    background-image:
-    linear-gradient(rgba(135,129,189,0.5),rgba(91,83,158,0.8)),
-    url('../images/bg-white.png');
+    font-size: 16px;
 }
 a:link, a:visited, a:hover, a:active {
     text-decoration: none;
     color: inherit;
     cursor: pointer;
 }
-p {
-    font-size: 16px;
+section {
+    background-color: #EFEFEF;
+    padding:  15px 0 0 0;
+    margin-bottom: -1em;
 }
 main .container-fluid {
-    -webkit-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
-    box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
+    padding: 0;
 }
 /*Header tags*/
 header nav {
@@ -26,8 +24,9 @@ header nav {
     border-bottom: #2e3192 2px solid;
     background-color: rgba(255,255,255, 1);
     position: fixed;
-    height: 5em;
+    height: 90px;
     width: 100%;
+    padding: 10px 75px;
     z-index: 100;
 }
 nav ul {
@@ -48,15 +47,33 @@ nav ul li:hover {
     transition: 2s;
 }
 nav img {
-    height: 80px;
+    height: 100%;
+    max-height: 80px;
     float: left;
 }
+.blue-button{
+    font-size: 24px;
+    color: #fff;
+    background-color: #474bc5;
+    border: #8781bd 2px solid;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.blue-button:hover{
+    -webkit-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
+    transform: scale(1.05);
+    background-color: #2e3192;
+    transition: 1s;
+}
+/*TO-DO - Fix width for first element*/
 .scrollspy {
     position: relative;
     z-index: 101;
-    background-color: #202265;
+    background-color: #474bc5;
     height: 5px;
-    width: 3em;
+    width: 50px;
     padding: 0 1em;
     margin: 0 1em;
 }
@@ -66,22 +83,31 @@ nav img {
 /*DropNav*/
 .dropNav-items {
     padding: 3em 0;
-    color: #1e205c;
+    color: #2e3192;
     display: none;
     text-align: center;
     font-size: 2em;
 }
 /*Main content tags*/
-.banner {
+/*TO-DO a fading-in animation would look really cool here*/
+.banner{
     position: relative;
     -webkit-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
     -moz-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
     box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
-    background-image: url('../images/p.pinheiro.jpg');
+    background-image: url('../images/capaSite.png');
     background-size: cover;
     background-position: center;
-    height: 95vh;
+    height: 720px;
     opacity: 0;
+}
+/*TO-DO tirar background-position-x e background-repeat, fazer nova image*/
+@media screen and (max-width:720px){
+    .banner{
+        height: 540px;
+        background-position-x: 60%;
+        background-repeat: no-repeat;
+    }
 }
 .banner-text {
     color: #fff;
@@ -90,39 +116,72 @@ nav img {
     z-index: 2;
     justify-content: left;
     animation-name: top-down;
+    -webkit-animation-name: top-down;
+    -moz-animation-name: top-down;
     animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
     animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
 }
-.banner-text button {
-    width: 128px;
-    height: 48px;
-    font-size: 32px;
-}
+/*Banner animation frames*/
 @keyframes top-down {
     0% {
         top: -800px;
     }
     100% {
-        top: 35%;
+        top: 300px;
     }
 }
-.banner-text h2 {
+@media screen and (max-width: 720px){
+    @keyframes top-down {
+        0% {
+            top: -800px;
+        }
+        100% {
+            top: 220px;
+        }
+    }
+}
+/*Banner image*/
+.banner-text img {
+    height: 169px;
+}
+@media screen and (max-width:720px){
+    .banner-text img{
+        height: 98px;
+    }
+}
+/*Banner header (title)*/
+.banner-text h1 {
+    font-size: 4.5em;
     font-weight: bold;
-    font-size: 3em;
 }
+@media screen and (max-width:1280px){
+    .banner-text h1{
+        font-size: 4em;
+    }
+}
+@media screen and (max-width:720px){
+    .banner-text h1{
+        font-size: 2.5em;
+    }
+}
+/*Banner subtitle*/
 .banner-text p {
-    font-size: 1.25em;
+    font-size: 2em;
+    font-weight: 300;
 }
-.banner-text button {
-    color: #fff;
-    background-color: #2e3192;
-    border: #8781bd 2px solid;
-    border-radius: 5px;
-    cursor: pointer;
+@media screen and (max-width:1280px){
+    .banner-text p{
+        font-size: 1.75em;
+    }
 }
-.banner-text button:hover {
-    background-color: #1e205c;
-    transition: 1s;
+@media screen and (max-width:720px){
+    .banner-text p{
+        font-size: 1.5em;
+    }
 }
 .overlay-main {
     position: absolute;
@@ -130,25 +189,175 @@ nav img {
     width: 100%;
     z-index: 2;
     background-image:
-    linear-gradient(135deg,rgba(46,49,146,0.8), rgba(0,0,0,0));
+    linear-gradient(135deg,rgba(46,49,146,0.5), rgba(0,0,0,0));
 }
-.title {
-    font-weight: bold;
-    color: #2e3192;
-    padding-bottom: 0.5em;
-}
-.blog-post {
+.option-row {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 40px;
     background-color: #fff;
-    margin-bottom: -1em;
-    padding: 1em 2em 2em 2em;
+}
+/*TO-DO you'll have to adjust scale between screen widths*/
+.option-button{
+    position: relative;
+    border-bottom: 5px #8781BD solid;
+    background-color: #fff;
+    padding: 5px;
+    z-index: 3;
+    height: 90px;
+    width: 240px;
     -webkit-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
     -moz-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
     box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
+    transform: scale(1.5);
+}
+.option-button i{
+    color: #2E3192;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    font-size: 40px;
+}
+.option-button p{
+    color: #2E3192;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+}
+.option-button:hover{
+    animation-name: highlight;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes highlight{
+    0%{
+        bottom: 0;
+    }
+    100% {
+        bottom: 20px;
+        border-bottom-width: 8px;
+        -webkit-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.8);
+        -moz-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.8);
+        box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.8);
+    }
+}
+@media screen and (max-width: 1130px){
+    .option-button{
+        height: 90px;
+        width: 220px;
+    }
+}
+@media screen and (max-width: 1040px){
+    .option-button{
+        height: 90px;
+        width: 180px;
+    }
+}
+@media screen and (max-width: 870px){
+    .option-button{
+        height: 90px;
+        width: 150px;
+    }
+    .option-button p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 735px){
+    .option-button{
+        height: 90px;
+        width: 120px;
+    }
+    .option-button p{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 560px){
+    .option-button{
+        height: 90px;
+        width: 100px;
+        transform: scale(1.55);
+    }
+    .option-button p{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 490px) {
+    .option-button{
+        height: 60px;
+        width: 75px;
+    }
+    .option-button i{
+        font-size: 16px;
+    }
+    .option-button p{
+        font-size: 8px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .option-button{
+        height: 75px;
+        width: 65px;
+    }
+    .option-button p{
+        font-size: 8px;
+    }
+}
+/*Description row*/
+.description{
+    text-align: center;
+    opacity: 0;
+}
+.description h2{
+    font-weight: 300;
+    font-size: 1.75em;
+    line-height: 1.5em;
+    margin: 15px 15%;
+}
+@media screen and (max-width: 420px){
+    .description h2{
+        font-size: 1.25em;
+        line-height: 1.5em;
+        margin: 15px 5%;
+    }
+}
+.description button{
+    height: 2.5em;
+    position: relative;
+    left: -800px;
+    opacity: 0;
+}
+.blue{
+    color: #2E3192;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+.post-thumbnail{
+    max-height: 400px;
 }
 .picture-shadow {
     -webkit-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
     -moz-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
     box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
+}
+.title {
+    font-weight: bold;
+    color: #2e3192;
+}
+.blog-post{
+    background-color: #fff;
+    padding: 0 2em 1em 2em;
+    margin-bottom: -1em;
+    -webkit-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
+}
+.blog-text{
+    padding: 0 5em;
+    margin-bottom: -1em;
 }
 .blog-post i {
     padding: 16px;
@@ -162,26 +371,71 @@ nav img {
     color: #E6AF2E;
     transition: color 1s;
 }
-.description {
-    position: relative;
-    left: -800px;
-    opacity: 0;
+.section-box {
+    margin: 15px 0;
     background-color: #fff;
-    padding: 2em;
-    padding-bottom: 0;
+    padding: 1em 2em;
+}
+.section-link{
+    border-bottom: #8781BD 8px solid;
+}
+.section-link p{
+    margin-bottom: 2px
+}
+/*Call to action*/
+.CTA {
+    background-color: #8781BD;
+    color: #fff;
+}
+.submit{
+    width: 100%;
+}
+.CTA-message{
+    text-align: center;
+}
+.CTA-message h2{
+   font-size: 2em;
+   font-weight: bold;
+}
+.CTA i{
+    font-size: 90px;
+    padding-right: 90px;
+    float: right;
+}
+@media screen and (max-width: 767px){
+    .CTA i{
+        font-size: 90px;
+        padding: 0;
+        float: none;
+        display: flex;
+        justify-content: center;
+  }
+}
+.CTA input{
+    height: 2.5em;
+}
+@media screen and (max-width: 767px){
+    .CTA form{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .CTA .blue-button{
+        margin: 5px;
+        margin-top: 15px;
+    }
 }
 .products {
     position: relative;
     right: -1800px;
-    background-color: #fff;
-    padding: 2em;
-    padding-top: 1em;
     opacity: 0;
 }
 .option {
     border: 5px solid #fff;
     padding: 0;
     transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
     -webkit-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
     -moz-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
     box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
@@ -221,7 +475,7 @@ footer {
 footer h2 {
     font-size: 1.25em;
     padding-bottom: 1em;
-    border-left: solid 1px #1e205c;
+    border-left: solid 1px #2e3192;
 }
 footer .col-md-3:first-child h2{
     border-left: none;
@@ -271,48 +525,6 @@ footer a:hover {
     float: right;
 }
 /*Media queries*/
-@media screen and (min-width: 1960px) {
-    .banner-text {
-        font-size: 2.5em;
-        margin: 0 50px;
-    }
-    .banner-text button {
-        width: 160px;
-        height: 64px;
-    }
-}
-/*For really big screens*/
-@media screen and (max-width: 1960px) {
-    .banner-text {
-        font-size: 2.5em;
-        margin: 0 50px;
-    }
-}
-/*Adapting title*/
-@media screen and (max-width: 1680px) {
-    .banner-text {
-        font-size: 2em;
-    }
-}
-/*Usual desktop screen size*/
-@media screen and (max-width: 1320px) {
-    .banner-text {
-        font-size: 1.5em;
-        margin: 0 20px;
-    }
-    .banner-text button {
-        width: 128px;
-        height: 48px;
-        font-size: 32px;
-    }
-}
-/*Smaller screens/ipads*/
-@media screen and (max-width: 960px) {
-    .banner-text {
-        font-size: 1.125em;
-        margin: 0 20px;
-    }
-}
 /*TO DO Don´t remember why, might delete later*/
 @media screen and (max-width:700px) {
     .dropNav-items {
@@ -322,13 +534,8 @@ footer a:hover {
 /*For smartphones, a lot of triggers happen @ this threshold*/
 @media screen and (max-width: 720px) {
     header nav {
-    background-color: rgba(255,255,255,1);
-    }
-    .banner {
-        padding-top: 5em;
-    }
-    .overlay-main {
-        height: calc(100% - 5em);
+        background-color: rgba(255,255,255,1);
+        padding: 10px 5px;
     }
     nav ul li{
         display: none;
@@ -352,35 +559,5 @@ footer a:hover {
     }
     .scrollspy {
         display: none;
-    }
-}
-/*Footer adjustment*/
-@media screen and (max-width: 767px) {
-    footer {
-        text-align: center;
-    }
-    footer h2 {
-        border-left: none;
-        border-bottom: #1e205c 1px solid;
-    }
-    .copyright img {
-        float: unset;
-    }
-}
-/*Just adapting the title*/
-@media screen and (max-width: 500px) {
-    .banner-text {
-        font-size: 0.75em;
-    }
-    .banner {
-        height: 80vh;
-    }
-    @keyframes top-down {
-        0% {
-            top: -800px;
-        }
-        100% {
-            top: 40%;
-        }
     }
 }
