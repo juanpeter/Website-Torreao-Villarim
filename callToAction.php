@@ -10,12 +10,13 @@
             <i class="fas fa-envelope"></i>
         </div>
         <div class='col-md-6'>
-                <?php
-                if ( have_posts() ) : while ( have_posts() ) : the_post();
-
-                get_template_part( 'content', get_post_format() );
-        
-            endwhile; endif;
+        <?php
+            $post_id = 278;
+            $queried_post = get_post($post_id);
+            $content = $queried_post->post_content;
+            $content = apply_filters('the_content', $content);
+            $content = str_replace(']]>', ']]&gt;', $content);
+            echo $content;
             ?>
         </div>
     </div>

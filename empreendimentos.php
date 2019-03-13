@@ -1,29 +1,58 @@
-<div class='section-box'>
-    <hr>
-    <div class="row">
-        <h2 class='title products'><a href='index.php?page_id=226'>Empreendimentos</a></h2>
-    </div>
-    <div class='row products'>
-        <div class="col-md-4 option">
-            <a href="index.php?page_id=66">
-            <div class="overlay"></div>
-                    <img class="img-fluid" src="<?php echo get_template_directory_uri().'/images/p.pinheiro-min2.jpg'; ?>" alt="Empreendimentos prontos para morar!"/>
-                <p>Prontos para morar</p>
-            </a>
+<?php /* Template Name: Empreendimentos Page*/ ?>
+<?php get_header();?>
+
+<div class='container-fluid'>
+    <section class='portfolio-block'>
+        <div class='row'>
+            <div class='col-md-6 portfolio-text'>
+                <h2 class='title'>Em breve</h2>
+                <p>Lançaremos em breve novos imóveis!</p>
+                <a href='#'>
+                    <button class='blue-button'>Confira</button>
+                </a>
+            </div>
+            <div class='col-md-6 portfolio-img'></div>
         </div>
-        <div class="col-md-4 option">
-            <a href="index.php?page_id=180">
-                <div class="overlay"></div>
-                    <img class="img-fluid" src="<?php echo get_template_directory_uri().'/images/resMonteiro2.png'; ?>" alt="Empreendimentos prontos para morar!"/>
-                <p>Concluídos</p>
-            </a>
+    </section>
+    <section class='portfolio-block'>
+        <div class='row'>
+            <div class='col-md-6 portfolio-text'>
+                <h2 class='title'>Pronto para morar</h2>
+                <p>Confira nossos imóveis prontos para morar</p>
+                <a href='#'>
+                    <button class='blue-button'>Confira</button>
+                </a>
+            </div>
+            <div class='col-md-6 portfolio-img'></div>
         </div>
-        <div class="col-md-4 option">
-            <a href="index.php?page_id=203">
-                <div class="overlay"></div>
-                    <img class="img-fluid" src="<?php echo get_template_directory_uri().'/images/feirinhaTambau2.png'; ?>" alt="Empreendimentos prontos para morar!"/>
-                <p>Obras Públicas</p>
-            </a>
+    </section>
+    <section class='portfolio-block'>
+        <div class='row'>
+            <div class='col-md-6 portfolio-text'>
+                <h2 class='title'>Portfolio</h2>
+                <p>Confira os imóveis que fizeram parte de nossa história!</p>
+                <a href='#'>
+                    <button class='blue-button'>Confira</button>
+                </a>
+            </div>
+            <div class='col-md-6 portfolio-img'></div>
         </div>
-    </div>
-</div>
+    </section>
+
+<?php if(is_page(226)) {
+        echo '<style>
+            .container-fluid{
+                padding-top: 7em;
+            }
+			nav ul li:nth-child(3) {
+				font-weight: 400;
+				color: #2e3192;
+			}
+			.scrollspy {
+				left: 252px;
+            	width: 80px;
+			}
+			</style>';
+        }
+    ?>
+<?php get_footer(); ?>

@@ -30,6 +30,13 @@ $(window).scroll(function(){
     scrollFade();
 });
 
+//Get images for .portfolio-img with js//
+$(document).ready(function(){
+    $('.portfolio-img').css(
+        'background-image','url(../wp-content/themes/Construtora-torreao/images/capaSite.png)'
+    )
+});
+
 function scrollFade() {
     //Window current position!
     let scroll = $(window).scrollTop();
@@ -43,8 +50,6 @@ function scrollFade() {
             left:0,
         },1750);
     }
-        setTimeout(function(){
-            rotation(0)},500);
 }
 
 //If a dropNav link is clicked, call toggleNav
@@ -128,21 +133,6 @@ function navMobile(){
         $('#toggleNav').removeClass('fa-times');
     }
 };
-
-//Creates shadowy overlay on hovered class
-$(".option").hover(
-    function(){
-        //changes overlay class
-            $('.overlay',this).animate({
-                opacity: 1
-            }, 500);
-      }, function(){
-          //called when image in unhovered
-          $('.overlay',this).animate({
-                opacity: 0.5
-            }, 500);
-});
-
 //if the window width is less than 720px, elements are permanently overlayed
 function overlayMobile(){
     if ($(window).width() <= 720) {
@@ -157,20 +147,6 @@ function overlayMobile(){
         );
     }
 };
-
-//Rotates elements before scroll
-function rotation(d) {
-    var elem = $('.option');
-
-    $({deg: 15}).animate({deg: d}, {
-        duration: 1000,
-        step: function(now){
-            elem.css({
-                 transform: "rotate(" + now + "deg)"
-            });
-        }
-    });
-}
 
 //Move .scrollspy on click. hover and mouse interaction
 

@@ -24,6 +24,7 @@
                 <a href="index.php?page_id=129">
                     <img src="<?php echo get_template_directory_uri().'/images/headerLogo.png'; ?>" />
                 </a>
+                <!--TO-DO work on pages and then show this!-->
                 <i class="fas fa-bars mobile-view" id="toggleNav"></i>
                 <ul>
                 <li alt="Link para a home"><a href='index.php?page_id=129'>Home</a></li>

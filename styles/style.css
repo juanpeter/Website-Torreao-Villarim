@@ -1,7 +1,7 @@
 /*Global values*/
 body {
     overflow-x: hidden;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 16px;
 }
@@ -15,7 +15,7 @@ section {
     padding:  15px 0 0 0;
     margin-bottom: -1em;
 }
-main .container-fluid {
+.container-fluid {
     padding: 0;
 }
 /*Header tags*/
@@ -26,7 +26,7 @@ header nav {
     position: fixed;
     height: 90px;
     width: 100%;
-    padding: 10px 75px;
+    padding: 10px 4em;
     z-index: 100;
 }
 nav ul {
@@ -67,7 +67,6 @@ nav img {
     background-color: #2e3192;
     transition: 1s;
 }
-/*TO-DO - Fix width for first element*/
 .scrollspy {
     position: relative;
     z-index: 101;
@@ -101,10 +100,12 @@ nav img {
     height: 720px;
     opacity: 0;
 }
-/*TO-do Might need more adjustments*/
+/*TO-DO tirar background-position-x e background-repeat, fazer nova image*/
 @media screen and (max-width:720px){
     .banner{
         height: 540px;
+        background-position-x: 60%;
+        background-repeat: no-repeat;
     }
 }
 .banner-text {
@@ -195,7 +196,6 @@ nav img {
     padding-bottom: 40px;
     background-color: #fff;
 }
-/*TO-DO you'll have to adjust scale between screen widths*/
 .option-button{
     position: relative;
     border-bottom: 5px #8781BD solid;
@@ -221,7 +221,7 @@ nav img {
     display: flex;
     justify-content: center;
     margin: 5px;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: bold;
     text-align: center;
 }
@@ -273,28 +273,35 @@ nav img {
         font-size: 10px;
     }
 }
-@media screen and (max-width: 590px){
+@media screen and (max-width: 560px){
     .option-button{
         height: 90px;
-        width: 90px;
-    }
-}
-@media screen and (max-width: 590px){
-    .option-button{
-        height: 70px;
-        width: 70px;
+        width: 100px;
         transform: scale(1.55);
     }
     .option-button p{
         font-size: 10px;
     }
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 490px) {
+    .option-button{
+        height: 60px;
+        width: 75px;
+    }
     .option-button i{
-        font-size: 24px;
+        font-size: 16px;
     }
     .option-button p{
-        font-size: 10px;
+        font-size: 8px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .option-button{
+        height: 75px;
+        width: 65px;
+    }
+    .option-button p{
+        font-size: 8px;
     }
 }
 /*Description row*/
@@ -385,7 +392,7 @@ nav img {
     text-align: center;
 }
 .CTA-message h2{
-   font-size: 3em;
+   font-size: 2em;
    font-weight: bold;
 }
 .CTA i{
@@ -393,47 +400,44 @@ nav img {
     padding-right: 90px;
     float: right;
 }
+@media screen and (max-width: 767px){
+    .CTA i{
+        font-size: 90px;
+        padding: 0;
+        float: none;
+        display: flex;
+        justify-content: center;
+  }
+}
 .CTA input{
     height: 2.5em;
 }
-.products {
-    position: relative;
-    right: -1800px;
-    opacity: 0;
+@media screen and (max-width: 767px){
+    .CTA form{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .CTA .blue-button{
+        margin: 5px;
+        margin-top: 15px;
+    }
 }
-.option {
-    border: 5px solid #fff;
+/*Portfolio Block*/
+.portfolio-block{
+    position: relative;
+    align-items: center;
+    height: 20em;
+    margin: 1em 5em;
     padding: 0;
-    transform: rotate(15deg);
-    -moz-transform: rotate(15deg);
-    -webkit-transform: rotate(15deg);
-    -webkit-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
-    box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
+    overflow: hidden;
 }
-.option img {
-    position: relative;
-    z-index: 0;
+.portfolio-block .portfolio-text{
+    padding: 1em 2em;
 }
-.option p{
-    position: absolute;
+.portfolio-block .portfolio-img{
+    height: 20em;
     width: 100%;
-    bottom: 5px;
-    text-align: center;
-    color: #fff;
-    z-index: 3;
-    font-size: 1.5em;
-}
-.option:hover p {
-    font-size: 1.75em;
-    transition: 1s;
-}
-.overlay {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: 2;
-    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5));
 }
 /*Footer tags*/
 footer {
@@ -530,31 +534,5 @@ footer a:hover {
     }
     .scrollspy {
         display: none;
-    }
-    .option-button{
-        height: 80px;
-        width: 100px;
-    }
-    .option-button i{
-        font-size: 30px;
-    }
-}
-@media screen and (max-width: 360px) {
-    .option-button{
-        height: 60px;
-        width: 57px;
-    }
-    .option-button i{
-        font-size: 16px;
-    }
-    .option-button p{
-        font-size: 7px;
-    }
-    .banner-text button {
-        height: 30px;
-        font-size: 16px;
-    }
-    .option-row{
-        padding-bottom: 20px;
     }
 }

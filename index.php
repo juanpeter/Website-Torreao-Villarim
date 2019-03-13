@@ -23,13 +23,6 @@
 	 <!-- If it is the main page -->
 	 <?php if(is_page(129)) {
 	 	echo '<style>
-	 		.blog-post{
-				background-color: #8781BD;
-				padding: 0;
-    			-webkit-box-shadow: none;
-    			-moz-box-shadow: none;
-    			box-shadow: none;
-			 }
 			 nav ul li:nth-child(1) {
 				font-weight: 400;
 				color: #2e3192;
