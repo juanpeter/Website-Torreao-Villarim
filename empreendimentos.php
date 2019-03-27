@@ -5,9 +5,9 @@
     <section class='portfolio-block'>
         <div class='row'>
             <div class='col-md-6 portfolio-text'>
-                <h2 class='title'>Em breve</h2>
-                <p>Lançaremos em breve novos imóveis!</p>
-                <a href='#'>
+                <h2 class='title'>Em destaque</h2>
+                <p>Nosso último empreendimento!</p>
+                <a href="index.php?page_id=66" title="Link para o último empreendimento">
                     <button class='blue-button'>Confira</button>
                 </a>
             </div>
@@ -17,9 +17,9 @@
     <section class='portfolio-block'>
         <div class='row'>
             <div class='col-md-6 portfolio-text'>
-                <h2 class='title'>Pronto para morar</h2>
-                <p>Confira nossos imóveis prontos para morar</p>
-                <a href='#'>
+                <h2 class='title'>Empreendimentos Entregues</h2>
+                <p>Conheça os empreendimentos já entregues pela Torreão Villarim, cujas unidades encontram-se 100% vendidas.</p>
+                <a href="index.php?page_id=180" title="Link para Obras Concluídas">
                     <button class='blue-button'>Confira</button>
                 </a>
             </div>
@@ -29,9 +29,9 @@
     <section class='portfolio-block'>
         <div class='row'>
             <div class='col-md-6 portfolio-text'>
-                <h2 class='title'>Portfolio</h2>
-                <p>Confira os imóveis que fizeram parte de nossa história!</p>
-                <a href='#'>
+                <h2 class='title'>Obras públicas</h2>
+                <p>Conheça algumas de nossas obras concluídas em várias cidades dos estados da Paraíba e de Pernambuco em mais de 25 anos de história.</p>
+                <a href="index.php?page_id=203" title="Link para Obras Públicas">
                     <button class='blue-button'>Confira</button>
                 </a>
             </div>

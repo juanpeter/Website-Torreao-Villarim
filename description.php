@@ -3,7 +3,7 @@
     <div class='row'>
     <div class='col-12'>
         <h2>
-            Em mais de <spam class='blue'>25 anos de experiência</spam>, a Torreão Villarim
+            Com mais de <spam class='blue'>25 anos de experiência</spam>, a Torreão Villarim
             apresenta em sua trajetória quase 100 obras concluídas,
             sendo a <spam class='blue'>qualidade</spam> um compromisso firmado em cada projeto realizado.
         </h2>

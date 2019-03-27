@@ -13,7 +13,6 @@ a:link, a:visited, a:hover, a:active {
 section {
     background-color: #EFEFEF;
     padding:  15px 0 0 0;
-    margin-bottom: -1em;
 }
 .container-fluid {
     padding: 0;
@@ -72,7 +71,7 @@ nav img {
     z-index: 101;
     background-color: #474bc5;
     height: 5px;
-    width: 50px;
+    width: 60px;
     padding: 0 1em;
     margin: 0 1em;
 }
@@ -88,24 +87,95 @@ nav img {
     font-size: 2em;
 }
 /*Main content tags*/
-/*TO-DO a fading-in animation would look really cool here*/
 .banner{
     position: relative;
-    -webkit-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
-    box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
-    background-image: url('../images/capaSite.png');
+    background-image: url('../images/capaSite.jpg');
+    top: 70px;
+    height: 610px;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    height: 720px;
+    background-position: top;
     opacity: 0;
 }
-/*TO-DO tirar background-position-x e background-repeat, fazer nova image*/
-@media screen and (max-width:720px){
+@media screen and (max-width: 1370px){
     .banner{
-        height: 540px;
-        background-position-x: 60%;
-        background-repeat: no-repeat;
+        height: 560px;
+    }
+}
+@media screen and (max-width: 1275px){
+    .banner{
+        height: 520px;
+    }
+}
+@media screen and (max-width: 1190px){
+    .banner{
+        height: 480px;
+    }
+}
+@media screen and (max-width: 1110px){
+    .banner{
+        height: 440px;
+    }
+}
+@media screen and (max-width: 1005px){
+    .banner{
+        height: 400px;
+    }
+}
+@media screen and (max-width: 920px){
+    .banner{
+        height: 360px;
+    }
+}
+@media screen and (max-width: 830px){
+    .banner{
+        height: 320px;
+    }
+}
+@media screen and (max-width: 750px){
+    .banner{
+        height: 570px;
+        background-image: url('../images/capaSiteMobile.jpg');
+    }
+}
+@media screen and (max-width: 700px){
+    .banner{
+        height: 530px;
+    }
+}
+@media screen and (max-width: 640px){
+    .banner{
+        height: 490px;
+    }
+}
+@media screen and (max-width: 600px){
+    .banner{
+        height: 450px;
+    }
+}
+@media screen and (max-width: 560px){
+    .banner{
+        height: 410px;
+    }
+}
+@media screen and (max-width: 520px){
+    .banner{
+        height: 370px;
+    }
+}
+@media screen and (max-width: 480px){
+    .banner{
+        height: 330px;
+    }
+}
+@media screen and (max-width: 400px){
+    .banner{
+        height: 290px;
+    }
+}
+@media screen and (max-width: 320px){
+    .banner{
+        height: 250px;
     }
 }
 .banner-text {
@@ -124,16 +194,51 @@ nav img {
     -webkit-animation-fill-mode: forwards;
     -moz-animation-fill-mode: forwards;
 }
+@media screen and (max-width: 750px){
+    .banner-text {
+        width: 100%;
+    }
+}
 /*Banner animation frames*/
 @keyframes top-down {
     0% {
         top: -800px;
     }
     100% {
-        top: 300px;
+        top: 20px;
     }
 }
-@media screen and (max-width: 720px){
+@media screen and (max-width: 750px){
+    @keyframes top-down {
+        0% {
+            top: -800px;
+        }
+        100% {
+            top: 350px;
+        }
+    }
+}
+@media screen and (max-width: 700px){
+    @keyframes top-down {
+        0% {
+            top: -800px;
+        }
+        100% {
+            top: 300px;
+        }
+    }
+}
+@media screen and (max-width: 560px){
+    @keyframes top-down {
+        0% {
+            top: -800px;
+        }
+        100% {
+            top: 250px;
+        }
+    }
+}
+@media screen and (max-width: 520px){
     @keyframes top-down {
         0% {
             top: -800px;
@@ -143,43 +248,119 @@ nav img {
         }
     }
 }
+@media screen and (max-width: 480px){
+    @keyframes top-down {
+        0% {
+            top: -800px;
+        }
+        100% {
+            top: 200px;
+        }
+    }
+}
+@media screen and (max-width: 400px){
+    @keyframes top-down {
+        0% {
+            top: -800px;
+        }
+        100% {
+            top: 180px;
+        }
+    }
+}
+@media screen and (max-width: 320px){
+    @keyframes top-down {
+        0% {
+            top: -800px;
+        }
+        100% {
+            top: 130px;
+        }
+    }
+}
 /*Banner image*/
 .banner-text img {
-    height: 169px;
+    height: 110px;
 }
-@media screen and (max-width:720px){
-    .banner-text img{
-        height: 98px;
+@media screen and (max-width: 750px){
+    .banner-text img {
+        float: left;
+    }
+}
+@media screen and (max-width: 450px){
+    .banner-text img {
+        height: 90px;
+    }
+}
+@media screen and (max-width: 320px){
+    .banner-text img {
+        height: 70px;
     }
 }
 /*Banner header (title)*/
 .banner-text h1 {
-    font-size: 4.5em;
+    font-size: 3.25em;
     font-weight: bold;
 }
-@media screen and (max-width:1280px){
-    .banner-text h1{
-        font-size: 4em;
+@media screen and (max-width: 1420px){
+    .banner-text h1 {
+        font-size: 3em;
     }
 }
-@media screen and (max-width:720px){
-    .banner-text h1{
+@media screen and (max-width: 1270px){
+    .banner-text h1 {
         font-size: 2.5em;
+    }
+}
+@media screen and (max-width: 750px){
+    .banner-text h1 {
+        font-size: 3.25em;
+    }
+}
+@media screen and (max-width: 640px){
+    .banner-text h1 {
+        font-size: 2em;
+    }
+}
+@media screen and (max-width: 450px){
+    .banner-text h1 {
+        font-size: 1.5em;
     }
 }
 /*Banner subtitle*/
 .banner-text p {
-    font-size: 2em;
+    font-size: 1.75em;
     font-weight: 300;
+    margin-bottom: 0.5em;
 }
-@media screen and (max-width:1280px){
-    .banner-text p{
+@media screen and (max-width: 1420px){
+    .banner-text p {
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 1270px){
+    .banner-text p {
+        font-size: 1.25em;
+    }
+}
+@media screen and (max-width: 750px){
+    .banner-text p {
         font-size: 1.75em;
     }
 }
-@media screen and (max-width:720px){
-    .banner-text p{
-        font-size: 1.5em;
+@media screen and (max-width: 640px){
+    .banner-text p {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 640px){
+    .banner .blue-button {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 450px){
+    .banner-text p {
+        font-size: 0.75em;
     }
 }
 .overlay-main {
@@ -193,7 +374,7 @@ nav img {
 .option-row {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 40px;
+    padding: 80px 0;
     background-color: #fff;
 }
 .option-button{
@@ -202,7 +383,7 @@ nav img {
     background-color: #fff;
     padding: 5px;
     z-index: 3;
-    height: 90px;
+    height: 120px;
     width: 240px;
     -webkit-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
     -moz-box-shadow: 0px 0px 30px 2px rgba(0,0,0,0.3);
@@ -245,19 +426,16 @@ nav img {
 }
 @media screen and (max-width: 1130px){
     .option-button{
-        height: 90px;
         width: 220px;
     }
 }
 @media screen and (max-width: 1040px){
     .option-button{
-        height: 90px;
         width: 180px;
     }
 }
 @media screen and (max-width: 870px){
     .option-button{
-        height: 90px;
         width: 150px;
     }
     .option-button p{
@@ -275,7 +453,6 @@ nav img {
 }
 @media screen and (max-width: 560px){
     .option-button{
-        height: 90px;
         width: 100px;
         transform: scale(1.55);
     }
@@ -292,16 +469,16 @@ nav img {
         font-size: 16px;
     }
     .option-button p{
-        font-size: 8px;
+        font-size: 7px;
     }
 }
 @media screen and (max-width: 320px) {
     .option-button{
-        height: 75px;
+        height: 60px;
         width: 65px;
     }
     .option-button p{
-        font-size: 8px;
+        font-size: 6px;
     }
 }
 /*Description row*/
@@ -323,7 +500,7 @@ nav img {
     }
 }
 .description button{
-    height: 2.5em;
+    height: 100%;
     position: relative;
     left: -800px;
     opacity: 0;
@@ -369,11 +546,6 @@ nav img {
     color: #E6AF2E;
     transition: color 1s;
 }
-.section-box {
-    margin: 15px 0;
-    background-color: #fff;
-    padding: 1em 2em;
-}
 .section-link{
     border-bottom: #8781BD 8px solid;
 }
@@ -382,6 +554,7 @@ nav img {
 }
 /*Call to action*/
 .CTA {
+    padding: 1em;
     background-color: #8781BD;
     color: #fff;
 }
@@ -414,9 +587,7 @@ nav img {
 }
 @media screen and (max-width: 767px){
     .CTA form{
-        display: flex;
-        justify-content: center;
-        align-content: center;
+        overflow: hidden;
     }
     .CTA .blue-button{
         margin: 5px;
@@ -427,10 +598,26 @@ nav img {
 .portfolio-block{
     position: relative;
     align-items: center;
-    height: 20em;
+    height: 100%;
     margin: 1em 5em;
     padding: 0;
     overflow: hidden;
+}
+.portfolio-img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    width: 100%;
+}
+@media screen and (max-width: 720px){
+    .portfolio-block{
+        margin: 1em 2em;
+    }
+}
+@media screen and (max-width: 480px){
+    .portfolio-block{
+        margin: 1em 1em;
+    }
 }
 .portfolio-block .portfolio-text{
     padding: 1em 2em;

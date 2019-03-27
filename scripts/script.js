@@ -13,14 +13,12 @@ $(document).ready(function() {
         },1500);
     });
     navMobile();
-    overlayMobile();
     scrollFade()
 });
 
 //If the window is resized, call these functions
 $(window).resize(function(){
     navMobile(),
-    overlayMobile()
     //make the nav opacity 1
     $('header nav').css({'background-color':'rgba(255,255,255, 1)'});
 });
@@ -30,10 +28,19 @@ $(window).scroll(function(){
     scrollFade();
 });
 
+//portfolio array
+const PortArray = jQuery.makeArray($('.portfolio-img'));
+
 //Get images for .portfolio-img with js//
 $(document).ready(function(){
-    $('.portfolio-img').css(
-        'background-image','url(../wp-content/themes/Construtora-torreao/images/capaSite.png)'
+    $(PortArray[0]).css(
+        'background-image','url(../wp-content/themes/Construtora-torreao/images/capaSite.jpg)'
+    )
+    $(PortArray[1]).css(
+        'background-image','url(../wp-content/themes/Construtora-torreao/images/resMonteiro1.jpg)'
+    )
+    $(PortArray[2]).css(
+        'background-image','url(../wp-content/themes/Construtora-torreao/images/TJPB.jpg)'
     )
 });
 
@@ -71,7 +78,7 @@ function toggleNav(){
             'background-color':'rgba(255,255,255, 0.75)'});
         //raise dropNav height to 100%
         $('#dropNav').animate({
-            height:'25em',
+            height:'20em',
         },1000);
         //Change class to fa-times, while removing fa-bars
         $('#toggleNav').addClass('fa-times');
@@ -133,21 +140,6 @@ function navMobile(){
         $('#toggleNav').removeClass('fa-times');
     }
 };
-//if the window width is less than 720px, elements are permanently overlayed
-function overlayMobile(){
-    if ($(window).width() <= 720) {
-        $('.overlay').css(
-            'opacity', '1'
-        );
-    }
-    //if the windown width is bigger than 720px, they arent
-    else if ($(window).width() > 720){
-        $('.overlay').css(
-            'opacity', '0.5'
-        );
-    }
-};
-
 //Move .scrollspy on click. hover and mouse interaction
 
 //make navbar items an array
@@ -157,25 +149,19 @@ $(navArray).click(function(){
     if (this == navArray[0]) {
         $('.scrollspy').animate({
             left: '0',
-            width: '50px',
+            width: '60px',
         },1000);
     };
     if (this == navArray[1]) {
         $('.scrollspy').animate({
-            left: '88px',
-            width: '102px',
+            left: '97px',
+            width: '118px',
         },1000);
     };
     if (this == navArray[2]) {
         $('.scrollspy').animate({
-            left: '228px',
-            width: '70px',
-        },1000);
-    };
-    if (this == navArray[3]) {
-        $('.scrollspy').animate({
-            left: '338px',
-            width: '64px',
+            left: '252px',
+            width: '80px',
         },1000);
     };
 });

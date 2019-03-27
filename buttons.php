@@ -2,13 +2,13 @@
 <a href='index.php?page_id=66'>
         <div class='option-button' >
             <i class="fas fa-key"></i>
-            <p>Prontos para morar</p>
+            <p>Em Destaque</p>
         </div>
     </a>
     <a href='index.php?page_id=180'>
         <div class='option-button' >
             <i class="fas fa-building"></i>
-            <p>Obras Concluídas</p>
+            <p>Empreendimentos Entregues</p>
         </div>
     </a>
     <a href='index.php?page_id=203'>

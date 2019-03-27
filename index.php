@@ -6,11 +6,11 @@
 			<div class='banner'>
 				<div class="overlay-main"></div>
 				<div class='banner-text'>
-					<img src='<?php echo get_template_directory_uri().'/images/logoPP.png'; ?>'>
+					<img src='<?php echo get_template_directory_uri().'/images/logoPP.png'; ?>' alt="Logo do Residêncial Porto Pinheiro">
 					<h1>Porto Pinheiro</h1>
 					<p>Seu novo lar no Bessa</p>
-					<a href="index.php?page_id=66">
-						<button class='blue-button'>Confira</button>
+					<a href="index.php?page_id=66" title="Link para Porto Pinheiro">
+						<button class='blue-button'>Reserve o seu</button>
 					</a>
 				</div>
 			</div>

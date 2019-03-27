@@ -1,4 +1,4 @@
-<div class='section-box CTA'>
+<div class='CTA'>
     <div class='CTA-message row'>
         <div class='col-12'>
             <h2>Está interessado?</h2>

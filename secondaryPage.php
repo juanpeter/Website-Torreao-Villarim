@@ -31,8 +31,8 @@
 				color: #2e3192;
 			}
 			.scrollspy {
-				left: 228px;
-            	width: 70px;
+				left: 252px;
+            	width: 80px;
 			}
 			</style>';
 			include 'callToAction.php';
@@ -44,8 +44,8 @@
 				color: #2e3192;
 			}
 			.scrollspy {
-				left: 228px;
-            	width: 70px;
+				left: 252px;
+            	width: 80px;
 			}
 			</style>';
 		}
@@ -56,49 +56,32 @@
 				color: #2e3192;
 			}
 			.scrollspy {
-				left: 228px;
-            	width: 70px;
+				left: 252px;
+            	width: 80px;
 			}
 			</style>';
 		}
 // If it is the 'institucional' page
 		if(is_page(30)) {
-			// include 'empreendimentos.php';
 			include 'callToAction.php';
 			echo '<style>
 			nav ul li:nth-child(2) {
 				font-weight: 400;
 				color: #2e3192;
 			}
-			.scrollspy {
-				left: 88px;
-            	width: 102px;
+			.blog-post{
+				padding-left: 7.5em;
+				padding-right: 7.5em;
 			}
-			.products {
-				position: relative;
-				right: 0;
-				background-color: #fff;
-				opacity: 1;
-			}
-			.option {
-				transform: rotate(0deg);
-			}
-			.products.title {
-				display: none;
-			}
-			</style>';
-		}
-//TO-DO tirar isso aqui?
-//If it is the 'contato' page
-		if(is_page(220)) {
-			echo '<style>
-			nav ul li:nth-child(4) {
-				font-weight: 400;
-				color: #2e3192;
+			@media screen and (max-width: 720px){
+				.blog-post{
+					padding-left: 0.5em;
+					padding-right: 0.5em;
+				}
 			}
 			.scrollspy {
-				left: 338px;
-            	width: 64px;
+				left: 97px;
+            	width: 118px;
 			}
 			</style>';
 		}
